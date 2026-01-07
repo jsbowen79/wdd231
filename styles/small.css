@@ -19,8 +19,12 @@
 * {
     font-family: "Raleway", sans-serif; 
     font-optical-sizing: auto;
+    /*font-optical-sizing is a valid CSS Fonts Level 4 property and is supported by all modern
+    browsers.  W3C validator uses Fonts Level 3 and is not up to date.  Font-optical-sizing is 
+    recommended for the Raleway font.*/
     font-weight: 400; 
 }
+
 body{
     background-color: var(--light-gray);
 }
