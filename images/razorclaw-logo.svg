@@ -1,0 +1,96 @@
+<svg width="900" height="320" viewBox="0 0 900 320"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Fabric gradient -->
+    <linearGradient id="fabricGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1c33"/>
+      <stop offset="50%" stop-color="#13284a"/>
+      <stop offset="100%" stop-color="#0b1628"/>
+    </linearGradient>
+
+    <!-- Fold shading -->
+    <linearGradient id="foldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.08)"/>
+      <stop offset="50%" stop-color="rgba(0,0,0,0.15)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.05)"/>
+    </linearGradient>
+
+    <!-- Blade -->
+    <linearGradient id="bladeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a3f44"/>
+      <stop offset="50%" stop-color="#6b7076"/>
+      <stop offset="100%" stop-color="#1e2226"/>
+    </linearGradient>
+
+    <!-- Gold -->
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1d98b"/>
+      <stop offset="50%" stop-color="#caa44a"/>
+      <stop offset="100%" stop-color="#9a7626"/>
+    </linearGradient>
+
+    <!-- Crimson text -->
+    <linearGradient id="crimsonGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9e1b1b"/>
+      <stop offset="50%" stop-color="#c62828"/>
+      <stop offset="100%" stop-color="#7a1414"/>
+    </linearGradient>
+
+    <!-- Claw mask -->
+    <mask id="clawCuts">
+      <rect width="100%" height="100%" fill="white"/>
+      <g transform="rotate(-25 450 160)">
+        <rect x="360" y="40" width="26" height="240" fill="black"/>
+        <rect x="415" y="40" width="26" height="240" fill="black"/>
+        <rect x="470" y="40" width="26" height="240" fill="black"/>
+      </g>
+    </mask>
+  </defs>
+
+  <!-- Flag base -->
+  <rect x="80" y="50" width="740" height="220" rx="8"
+        fill="url(#fabricGrad)" mask="url(#clawCuts)"/>
+
+  <!-- Fabric folds -->
+  <rect x="80" y="50" width="740" height="220" rx="8"
+        fill="url(#foldGrad)" opacity="0.35"/>
+
+  <!-- Torn fabric edges -->
+  <g transform="rotate(-25 450 160)" fill="#081020">
+    <path d="M350 40
+             l14 18 l-10 24 l16 26 l-18 30
+             l14 34 l-16 38 l18 42 l-20 44" />
+    <path d="M405 40
+             l16 20 l-12 26 l18 28 l-20 32
+             l16 36 l-18 40 l20 44" />
+    <path d="M460 40
+             l14 18 l-10 24 l16 26 l-18 30
+             l14 34 l-16 38 l18 42 l-20 44" />
+  </g>
+
+  <!-- Straight Razor -->
+  <g transform="rotate(-20 450 160)">
+    <rect x="260" y="145" width="380" height="22" rx="3"
+          fill="url(#bladeGrad)"/>
+    <rect x="260" y="145" width="380" height="4"
+          fill="url(#goldGrad)"/>
+    <rect x="240" y="135" width="24" height="42" rx="4"
+          fill="#2b2f33"/>
+    <circle cx="252" cy="156" r="4" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Text -->
+  <text x="450" y="255"
+        text-anchor="middle"
+        font-size="48"
+        letter-spacing="3"
+        fill="url(#crimsonGrad)"
+        stroke="url(#goldGrad)"
+        stroke-width="1.2"
+        paint-order="stroke fill"
+        font-family="Cinzel, Trajan Pro, serif">
+    RazorClaw
+  </text>
+
+</svg>

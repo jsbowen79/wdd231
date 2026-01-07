@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <style>
+      .blue { fill:#002B7F; }
+      .gold { fill:#FFD200; }
+      .stroke { stroke:#002B7F; stroke-width:8; fill:none; }
+    </style>
+  </defs>
+
+  <!-- Outer circle -->
+  <circle cx="200" cy="200" r="180" class="stroke"/>
+
+  <!-- Gold accent line -->
+  <path d="M100 260 H300" stroke="#FFD200" stroke-width="6" />
+
+  <!-- Bridge arch -->
+  <path d="M80 230 Q200 120 320 230"
+        class="stroke"
+        stroke-linecap="round"/>
+
+  <!-- Bridge deck -->
+  <rect x="80" y="230" width="240" height="18"
+        rx="9" ry="9" class="blue"/>
+
+  <!-- Growth bars (rounded) -->
+  <rect x="140" y="190" width="26" height="40"
+        rx="6" ry="6" class="blue"/>
+  <rect x="187" y="165" width="26" height="65"
+        rx="6" ry="6" class="blue"/>
+  <rect x="234" y="140" width="26" height="90"
+        rx="6" ry="6" class="blue"/>
+
+  <!-- Arrow tip -->
+  <path d="M247 130 L247 108 L265 122 Z" class="blue"/>
+
+</svg>
