@@ -1,0 +1,57 @@
+{"members":[{
+    "companyName":"GlassDoctorAuto",
+    "companyAddress": "6875 E 54th Place, Commerce City, CO 80022",
+    "companyPhone": "(720)994-8884",
+    "companyWebsiteURL": "https://glassdoctor.com/commerce-city-auto",
+    "membershipLevel": 1,
+    "description":"Installation and repair of all auto glass and headlight restoration",
+    "img": "https://jsbowen79/github.io/wdd231/chamber/images/glassDoctorLogo.svg", 
+    "alt": "Glass Doctor Logo"  
+    },{
+        "companyName": "Stadium Auto & Truck Parts",
+        "companyAddress": "9751E 96th Avenue, Commerce City, CO 80640",
+        "companyPhone": "(303)825-1049",
+        "companyWebsiteURL": "https://www.stadiumautoparts.com",
+        "membershipLevel": 2, 
+        "description": "Automotive Recycling, Used Auto Parts"
+    },{
+        "companyName": "Pro Graphic Install",
+        "companyAddress": "7245 Gilpin Way #220, Denver, CO 80229",
+        "companyPhone": "(720)445-5593",
+        "companyWebsiteURL": "https://pginstall.com",
+        "membershipLevel": 2,
+        "description": "Custom print and installation of vinyl graphics on your vehicles, windows, or walls."
+    },{
+        "companyName": "ProColor Collision",
+        "companyAddress": "8531 Rosemary Street, Commerce City, CO 80022",
+        "companyPhone": "(720)638-9920",
+        "companyWebsiteURL": "https://www.procolor.com/en-us/",
+        "membershipLevel": 1,
+        "description": "Auto body collision repair"
+    },
+    {
+        "companyName": "Salon Madrid Events Center",
+        "companyAddress": "6495 Monaco Street, Commerce City, CO 80022",
+        "companyPhone": "(720)979-2001",
+        "companyWebsiteURL": null,
+        "membershipLevel": 1,
+        "description": "Centennial Club, Event Planning"
+    },
+    {
+        "companyName": "Techy",
+        "companyAddress": "5990 Dahlia Street Commerce City CO 80022",
+        "companyPhone": "(417)529-2822",
+        "companyWebsiteURL": "https://techycommercecity.com/",
+        "membershipLevel": 3,
+        "description": "Phone, laptop, computer, game station, electronics repair and retail accessories."
+    },
+    {
+        "companyName": "Johnson Law Group",
+        "companyAddress": "13599 E 104th Avenue, Suite 300, Commerce City, CO 80022",
+        "companyPhone": "(720)452-2540",
+        "companyWebsiteURL": "https://www.johnsonlgroup.com/",
+        "membershipLevel": 2,
+        "description": "Specializing in divorce, family law, wills, and trusts."
+    } 
+    
+    ]}

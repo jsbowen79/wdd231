@@ -1,0 +1,52 @@
+:root{
+    --standard: 8px; 
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: roboto sans-serif;
+}
+
+body{
+background-color: rgb(97, 191, 235)
+}
+
+#cards {
+    display: grid; 
+    grid-gap: 0.5rem; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+h1{
+    text-align: center;
+}
+
+section {
+    margin: var(--standard); 
+    padding: var(--standard); 
+    background-color: #eee;
+    border: 1px solid rgb(0 0 0 /10%);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+section p {
+    font-size: smaller;
+    text-align: center;
+    margin: 0; 
+    padding: var(--standard)
+
+
+}
+
+section img {
+    width: auto; 
+    max-width: 90%;
+    box-shadow: 0 0 30px #777; 
+    height: auto; 
+    border: 1px solid #111; 
+    margin: var(--standard); 
+}
