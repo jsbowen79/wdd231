@@ -32,7 +32,7 @@
         "companyWebsiteURL": "https://www.procolor.com/en-us/",
         "membershipLevel": 1,
         "description": "Auto body collision repair",
-        "img": "images/proColorGraphic.webp",
+        "img": "images/proColorGraphic.avif",
         "alt": "ProColor Collision Logo"
     },
     {
@@ -52,7 +52,7 @@
         "companyWebsiteURL": "https://techycommercecity.com/",
         "membershipLevel": 3,
         "description": "Phone, laptop, computer, game station, electronics repair and retail accessories.",
-        "img": "images/techyLogo.png",
+        "img": "images/techyLogo.webp",
         "alt": "Techy Logo"
     },
     {
@@ -62,7 +62,7 @@
         "companyWebsiteURL": "https://www.johnsonlgroup.com/",
         "membershipLevel": 2,
         "description": "Specializing in divorce, family law, wills, and trusts.",
-        "img": "images/johnsonLogo.png",
+        "img": "images/johnsonLogo.webp",
         "alt": "Johnson Law Group Logo"
     } 
     

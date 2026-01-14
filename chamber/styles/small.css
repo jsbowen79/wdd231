@@ -25,6 +25,7 @@
     browsers.  W3C validator uses Fonts Level 3 and is not up to date.  Font-optical-sizing is 
     recommended for the Raleway font.*/
     font-weight: 400; 
+    color: var(--dark-gray)
 }
 
 html, body{
@@ -149,10 +150,14 @@ header img{
 footer {
     display: block; 
     padding: 1rem 10px;
-    color: var(--gold);
     background-color: var(--dark-gray);
 }
-
+footer div h3, 
+footer div a,
+footer div p, 
+footer div p span {
+color: var(--gold);
+}
 .address{
     grid-area: 1/1/2/2; 
     line-height: 20px;
@@ -187,6 +192,7 @@ footer {
 
 .social a:hover {
     background: var(--gold); 
+    cursor: pointer;
 }
 
 /********************************Main*******************************************/
@@ -201,70 +207,99 @@ footer {
 }
 
 .hero img{
-    max-width: 90%;
+    width: 100%;
+    max-width: 462px;
     height: auto; 
 }
 
-/********************************SECTIONS***************************************/
+/********************************BUTTONS***************************************/
 
-section{
-    padding: var(--standard); 
-    border: 2px solid black;
-    border-radius: var(--standard);
-    margin: var(--standard);
-
-}
-
-section figure{
-    display: block;
-    width: 100%; 
-    margin: 0 auto; 
-    padding: 0; 
-
-}
-
-section figure img, section figure figcaption{
-    display: block; 
-    width: 90%;
-    height: auto; 
-    margin: 0 auto;
-    text-align: center;
-}
-
-.buttons {
+.button {
     display: flex;
     justify-content: space-around;
 }
 
-.buttons button{
-    width: 100%; 
+.button button{
     text-align: center;
     padding: var(--standard);
     background-color: var(--primary-blue);
     margin: var(--large);
-    color: var(--white);
-
 }
 
-.buttons .selectedCourse {
-    background-color: var(--gold);
-    color: var(--dark-gray)
-
+.button button:hover{
+    cursor:pointer; 
 }
+
+
 
 /************************************Cards*****************************************/
 
-.courses span{
-    display: block; 
-    background-color: var(--alert-red);
-    border: 2px solid var(--dark-gray); 
+.cards{
+    display: grid; 
+    background-color: var(--light-gray);
     border-radius: 5px;
     text-align: center;
     padding: var(--standard);
     margin: var(--standard); 
-    /* color: var(--white); */
-
+    align-items: stretch;
+    
 }
-.courses span.taken{
-  background-color: var(--success-green);  
+
+.card{
+    height: 100%;
+    align-self: start;
+    border: 2px solid var(--gold); 
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card img{
+    width: 100%; 
+    max-width: 320px;
+    border: 2px solid black;
+    margin: var(--standard) 0;  
+}
+.card p{
+    margin: var(--standard);
+} 
+
+.card a{
+    word-break: break-word;
+    overflow-Wrap: anywhere; 
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.card a:hover{
+    color: var(--success-green); 
+}
+
+.card a:visited {
+    color: var(--dark-gray); 
+}
+.list h2{
+    background-color: var(--light-gray);
+    color: var(--dark-gray); 
+    font-size: 1rem; 
+}
+
+.gridDisplay{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: var(--large);
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    text-align: center;
+    padding: var(--standard);
+    align-items: stretch;
+}
+
+#grid, #list{
+    background-color: var(--gold);
+    height: var(--selectable); 
+    font-size: 1rem; 
+    padding: var(--standard); 
+    border: 2px solid var(--dark-gray); 
+    margin: var(--standard);
 }
