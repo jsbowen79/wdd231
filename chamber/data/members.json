@@ -6,7 +6,9 @@
         "membershipLevel": 1,
         "description":"Installation and repair of all auto glass and headlight restoration",
         "img": "images/glassDoctorLogo.svg", 
-        "alt": "Glass Doctor Logo"  
+        "alt": "Glass Doctor Logo",  
+        "width":"240", 
+        "height": "240"
     },{
         "companyName": "Stadium Auto & Truck Parts",
         "companyAddress": "9751E 96th Avenue, Commerce City, CO 80640",
@@ -15,7 +17,9 @@
         "membershipLevel": 2, 
         "description": "Automotive Recycling, Used Auto Parts", 
         "img":"images/stadium.avif",
-        "alt": "Stadium Auto & Truck Parts Logo"
+        "alt": "Stadium Auto & Truck Parts Logo",
+        "width": "245",
+         "height": "110"
     },{
         "companyName": "Pro Graphic Install",
         "companyAddress": "7245 Gilpin Way #220, Denver, CO 80229",
@@ -24,7 +28,9 @@
         "membershipLevel": 2,
         "description": "Custom print and installation of vinyl graphics on your vehicles, windows, or walls.",
         "img": "images/pgLogo.png",
-        "alt": "Pro Graphic Install Logo"
+        "alt": "Pro Graphic Install Logo",
+        "width": "250",
+        "height": "98"
     },{
         "companyName": "ProColor Collision",
         "companyAddress": "8531 Rosemary Street, Commerce City, CO 80022",
@@ -33,7 +39,9 @@
         "membershipLevel": 1,
         "description": "Auto body collision repair",
         "img": "images/proColorGraphic.avif",
-        "alt": "ProColor Collision Logo"
+        "alt": "ProColor Collision Logo",
+        "width": "320",
+        "height": "161"
     },
     {
         "companyName": "Aspen Financial Services Group LLC",
@@ -43,7 +51,9 @@
         "membershipLevel": 1,
         "description": "Financial & Investment services",
         "img": "images/aspenLogo.webp",
-        "alt": "Aspen Financial Services Group Logo"
+        "alt": "Aspen Financial Services Group Logo",
+        "width" : "223",
+        "height": "140"
     },
     {
         "companyName": "Techy",
@@ -53,7 +63,9 @@
         "membershipLevel": 3,
         "description": "Phone, laptop, computer, game station, electronics repair and retail accessories.",
         "img": "images/techyLogo.webp",
-        "alt": "Techy Logo"
+        "alt": "Techy Logo",
+        "width": "320",
+        "height": "213"
     },
     {
         "companyName": "Johnson Law Group",
@@ -63,7 +75,9 @@
         "membershipLevel": 2,
         "description": "Specializing in divorce, family law, wills, and trusts.",
         "img": "images/johnsonLogo.webp",
-        "alt": "Johnson Law Group Logo"
+        "alt": "Johnson Law Group Logo",
+        "width": "320", 
+        "height":"213"
     } 
     
     ]}

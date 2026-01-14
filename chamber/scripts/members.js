@@ -31,7 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const imgEL = document.createElement('img');
             imgEL.src = member.img;
             imgEL.alt = member.alt;
-            imgEL.loading = "lazy"; 
+            imgEL.loading = "lazy";
+            imgEL.height = member.height; 
+            imgEL.width = member.width; 
 
             const addressEL = document.createElement('p');
             addressEL.textContent = member.companyAddress;
