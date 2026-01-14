@@ -13,29 +13,37 @@
         "companyPhone": "(303)825-1049",
         "companyWebsiteURL": "https://www.stadiumautoparts.com",
         "membershipLevel": 2, 
-        "description": "Automotive Recycling, Used Auto Parts"
+        "description": "Automotive Recycling, Used Auto Parts", 
+        "img":"https://jsbowen79/github.io/wdd231/chamber/images/stadium.avif",
+        "alt": "Stadium Auto & Truck Parts Logo"
     },{
         "companyName": "Pro Graphic Install",
         "companyAddress": "7245 Gilpin Way #220, Denver, CO 80229",
         "companyPhone": "(720)445-5593",
         "companyWebsiteURL": "https://pginstall.com",
         "membershipLevel": 2,
-        "description": "Custom print and installation of vinyl graphics on your vehicles, windows, or walls."
+        "description": "Custom print and installation of vinyl graphics on your vehicles, windows, or walls.",
+        "img": "https://jsbowen79/github.io/wdd231/chamber/images/pgLogo.png",
+        "alt": "Pro Graphic Install Logo"
     },{
         "companyName": "ProColor Collision",
         "companyAddress": "8531 Rosemary Street, Commerce City, CO 80022",
         "companyPhone": "(720)638-9920",
         "companyWebsiteURL": "https://www.procolor.com/en-us/",
         "membershipLevel": 1,
-        "description": "Auto body collision repair"
+        "description": "Auto body collision repair",
+        "img": "https://jsbowen79/github.io/wdd231/chamber/images/proColorGraphic.webp",
+        "alt": "ProColor Collision Logo"
     },
     {
-        "companyName": "Salon Madrid Events Center",
-        "companyAddress": "6495 Monaco Street, Commerce City, CO 80022",
-        "companyPhone": "(720)979-2001",
-        "companyWebsiteURL": null,
+        "companyName": "Aspen Financial Services Group LLC",
+        "companyAddress": "9214 Pitkin Street, Commerce City, CO 80022",
+        "companyPhone": "(720)601-4360",
+        "companyWebsiteURL": "https://trueplanconsultants.com/",
         "membershipLevel": 1,
-        "description": "Centennial Club, Event Planning"
+        "description": "Financial & Investment services",
+        "img": "https://jsbowen79/github.io/wdd231/chamber/images/aspenLogo.webp",
+        "alt": "Aspen Financial Services Group Logo"
     },
     {
         "companyName": "Techy",
@@ -43,7 +51,9 @@
         "companyPhone": "(417)529-2822",
         "companyWebsiteURL": "https://techycommercecity.com/",
         "membershipLevel": 3,
-        "description": "Phone, laptop, computer, game station, electronics repair and retail accessories."
+        "description": "Phone, laptop, computer, game station, electronics repair and retail accessories.",
+        "img": "https://jsbowen79/github.io/wdd231/chamber/images/techyLogo.png",
+        "alt": "Techy Logo"
     },
     {
         "companyName": "Johnson Law Group",
@@ -51,7 +61,9 @@
         "companyPhone": "(720)452-2540",
         "companyWebsiteURL": "https://www.johnsonlgroup.com/",
         "membershipLevel": 2,
-        "description": "Specializing in divorce, family law, wills, and trusts."
+        "description": "Specializing in divorce, family law, wills, and trusts.",
+        "img": "https://jsbowen79/github.io/wdd231/chamber/images/johnsonLogo.png",
+        "alt": "Johnson Law Group Logo"
     } 
     
     ]}
