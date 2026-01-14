@@ -151,11 +151,12 @@ footer {
     display: block; 
     padding: 1rem 10px;
     background-color: var(--dark-gray);
+    min-height: 245px;
 }
 footer div h3, 
 footer div a,
 footer div p, 
-footer div p span {
+footer div span {
 color: var(--gold);
 }
 .address{
@@ -198,9 +199,9 @@ color: var(--gold);
 /********************************Main*******************************************/
 .hero{
     display: flex; 
-    width: 100%; 
+    width: 80%; 
     align-items: center;
-    justify-content: center;
+    justify-self: center;
     margin: var(--standard);
     background-color: var(--secondary-blue);
     padding: var(--large);
@@ -208,7 +209,6 @@ color: var(--gold);
 
 .hero img{
     width: 100%;
-    max-width: 462px;
     height: auto; 
 }
 

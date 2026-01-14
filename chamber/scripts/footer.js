@@ -2,18 +2,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const yearEl = document.getElementById('currentyear');
     if (yearEl) {
-        yearEl.textContent = new Date().getFullYear();
+        yearEl.textContent = `© ${new Date().getFullYear()} Commerce City Chamber of Commerce`;
+         
     }
 
     const lastEL = document.getElementById('lastModified');
     const raw = document.lastModified;
 
     if (!raw) {
-        lastEL.textContent = 'Last Modified: not available'
+        lastEL.innerHTML = 'Last Modified: not available'
         return;
     }
 
-    lastEL.textContent = 'Last Modified: ' + raw;
+    lastEL.innerHTML = `Last Modified: ${raw}`;
 
 
     

@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A listing of businesses, services, and business contacts for members of the Commerce City Chamber of Commerce.">
     <meta name="author" content="Joseph Bowen">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta property="og:title" content="Commerce City Chamber of Commerce Directory">
     <meta property="og:description" content="A listing of businesses, services, and business contacts for members of the Commerce City Chamber of Commerce.">
-    <meta property="og:url" content="https://jsbowen79/github.io/wee231/chamber/directory.html">
-    <meta property="og:image" content="https://jsbowen79.github.io/wdd231/chamber/images/hero_462.webp">
+    <meta property="og:url" content="https://jsbowen79.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://jsbowen79.github.io/wdd231/chamber/images/hero_1280x720.avif">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+
+    <link rel="canonical" href="https://jsbowen79.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="https://jsbowen79.github.io/wdd231/chamber/chamber.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/members.js" defer></script>
+    
     <title>Commerce City Chamber of Commerce Directory</title>
+
 </head>
 <body>
     <header>
@@ -35,9 +48,18 @@
     </header>
     <main>
         <div class="hero">
-            <img src="images/hero_462.avif" alt="Commerce City Civic Building"
-            width="462"
-            height="280">
+            <img src="images/hero_1280x720.avif" alt="A photo of Dick's Sporting Goods Park in Commerce City"
+            width="1280"
+            height="720"
+            srcset="
+            images/hero_425X239.avif 420w,
+            images/hero_850X478.avif 850w,
+            images/hero_1280x720.avif 1280w"
+            sizes="
+            (max-width: 600px) 80vw,
+            90vw"
+            fetchpriority="high""
+            >
         </div>
         <div class="button">
             <button id="grid">🔲 Grid</button>
@@ -65,8 +87,8 @@
         <div class="copyright">
             <p>WDD231 Class Project <br>
             🥋 Joseph Bowen 🥋<br></p>
-            <p>© <span id="currentyear"></span> Commerce City Chamber of Commerce</p>
-            <p id="lastModified"></p>
+            <span id="currentyear">© #### Commerce City Chamber of Commerce</span> 
+            <p id="lastModified">##############################</p>
         </div>
     </footer>
 </body>
