@@ -148,11 +148,11 @@ header img{
 /**********************************FOOTER***************************************/
 
 footer {
-    min-height: 200px;
+    min-height: 308px;
     display: block; 
     padding: 1rem 10px;
     background-color: var(--dark-gray);
-    min-height: 245px;
+
 }
 footer div h3, 
 footer div a,
@@ -177,20 +177,19 @@ color: var(--gold);
 }
 
 .social a {
-    height: auto;
+    height: 84px;
+    width: 84px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
     border: var(--secondary-blue) solid 1px;
     border-radius: 12px;
     padding: var(--large);
 }
  .social a img{
     background-color: var(--secondary-blue);
-    width:80px;
-    height: 80px;  
-    height: auto; 
+    width:100%;
+    height: 100%;  
  }
 
 .social a:hover {
@@ -198,22 +197,24 @@ color: var(--gold);
     cursor: pointer;
 }
 
+#currentYear, #lastModified{
+    display: block; 
+    min-height: 1.5em; 
+}
 /********************************Main*******************************************/
 .hero{
-    display: flex; 
-    width: 80%; 
-    align-items: center;
-    justify-self: center;
-    margin: var(--standard);
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto;
     background-color: var(--secondary-blue);
-    padding: var(--large);
+    max-width: 1280px;
 }
 
 .hero img{
-    width: 80vw;
-    max-width: 1280px;
+    width: 100%;
     height: auto; 
     aspect-ratio: 16/9;
+    display: block; 
 }
 
 /********************************BUTTONS***************************************/
@@ -238,19 +239,10 @@ color: var(--gold);
 
 /************************************Cards*****************************************/
 
-.cards{
-    display: grid; 
-    background-color: var(--light-gray);
-    border-radius: 5px;
-    text-align: center;
-    padding: var(--standard);
-    margin: var(--standard); 
-    align-items: stretch;
-    
-}
-
 .card{
+    width: 100%; 
     height: 100%;
+    min-height: 400px;
     align-self: start;
     border: 2px solid var(--gold); 
     display: flex; 
@@ -259,10 +251,12 @@ color: var(--gold);
 }
 
 .card img{
+    display: block;
     width: 100%; 
     max-width: 320px;
     border: 2px solid black;
-    margin: var(--standard) 0;  
+    margin: var(--standard) 0; 
+    align-self: center;  
 }
 .card p{
     margin: var(--standard);
@@ -296,7 +290,7 @@ color: var(--gold);
     border-radius: 5px;
     text-align: center;
     padding: var(--standard);
-    align-items: stretch;
+    align-items: start;
 }
 
 #grid, #list{

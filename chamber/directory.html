@@ -18,16 +18,19 @@
 
     <link rel="canonical" href="https://jsbowen79.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="https://jsbowen79.github.io/wdd231/chamber/chamber.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/members.js" defer></script>
-    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" as="style"
+        onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap">
+    </noscript>
     <title>Commerce City Chamber of Commerce Directory</title>
 
 </head>
@@ -58,6 +61,7 @@
             sizes="
             (max-width: 600px) 80vw,
             90vw"
+            decoding="async"
             loading="eager"
             fetchpriority="high"
             >
@@ -88,8 +92,8 @@
         <div class="copyright">
             <p>WDD231 Class Project <br>
             Joseph Bowen</p>
-            <span id="currentyear">© #### Commerce City Chamber of Commerce</span> 
-            <p id="lastModified">##############################</p>
+            <span id="currentyear">© 2026 Commerce City Chamber of Commerce</span> 
+            <p id="lastModified">Last Modified: -01142026195756-</p>
         </div>
     </footer>
 </body>

@@ -31,7 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const imgEL = document.createElement('img');
             imgEL.src = member.img;
             imgEL.alt = member.alt;
-            imgEL.loading = "lazy";
+            if (i <= 1) {
+                imgEL.loading = "eager";
+                imgEL.fetchPriority = "high"; 
+            }
+            else {
+                imgEL.loading = "lazy"; 
+            }
             imgEL.height = member.height; 
             imgEL.width = member.width; 
 
