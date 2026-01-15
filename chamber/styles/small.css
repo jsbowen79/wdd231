@@ -32,6 +32,7 @@ html, body{
     background-color: var(--light-gray);
     max-width: 100%; 
     overflow-x: hidden; 
+    font-display: swap;
 }
 h2 {
     text-align: center;
@@ -147,65 +148,92 @@ header img{
 
 /**********************************FOOTER***************************************/
 
+/* ---------- Footer Container ---------- */
 footer {
-    min-height: 320px;
-    display: block; 
+    display: flex;
+    flex-direction: column;
+    /* stack on mobile */
+    gap: 1rem;
+    /* spacing between sections */
     padding: 1rem 10px;
     background-color: var(--dark-gray);
-
+    font-family: 'Roboto', sans-serif;
+    font-display: swap;
+    /* reduce CLS from fonts */
 }
-footer div h3, 
+
+/* ---------- Text Styling ---------- */
+footer div h3,
 footer div a,
-footer div p, 
+footer div p,
 footer div span {
-color: var(--gold);
-}
-.address h3{
-    
-    line-height: 20px;
+    color: var(--gold);
+    margin: 0;
+    line-height: 1.2;
+    /* relative line height */
 }
 
-.address p, .copyright{
-    font-size: .75rem;
-    margin-top: 5px;
-    line-height: 15px;
+/* ---------- Address Section ---------- */
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    /* spacing between lines */
 }
+
+.address h3 {
+    line-height: 1.2;
+    margin-left: ;
+.address p {
+    font-size: 0.75rem;
+    line-height: 1.2;
+}
+
 .social {
     display: flex;
-    justify-content: space-around;
-    column-gap: 30px;
-    background-color: var(--dark-gray);
-    padding: var(--large) 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 .social a {
-    height: 50px;
-    width: 50px; 
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50px;
+    height: 50px;
     border: var(--secondary-blue) solid 1px;
     border-radius: 12px;
-    padding: var(--large);
-}
- .social a img{
     background-color: var(--secondary-blue);
-    width:var(--selectable);
-    height: var(--selectable);  
- }
+    transition: background 0.2s;
+}
 
- .copyright{
-    margin: 0 var(--large);
- }
+.social a img {
+    width: var(--selectable);
+    height: var(--selectable);
+}
+
 .social a:hover {
-    background: var(--gold); 
+    background: var(--gold);
     cursor: pointer;
 }
 
-#currentYear, #lastModified{
-    display: block; 
-    min-height: 1.5em; 
+.copyright {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    margin: 0;
 }
+
+#currentYear,
+#lastModified {
+    display: block;
+    min-height: 1.5em;
+}
+
+
 /********************************Main*******************************************/
 .hero{
     width: 100%; 
@@ -260,7 +288,8 @@ color: var(--gold);
 .card img{
     display: block;
     width: 100%; 
-    max-width: 320px;
+    max-width: 245px;
+    height: auto; 
     border: 2px solid black;
     margin: var(--standard) 0; 
     align-self: center;  
@@ -289,15 +318,17 @@ color: var(--gold);
     font-size: 1rem; 
 }
 
-.cards, .gridDisplay{
+.gridDisplay{
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    min-height: 1700px;
     grid-gap: var(--large);
     background-color: var(--light-gray);
     border-radius: 5px;
     text-align: center;
     padding: var(--standard);
     align-items: start;
+    width: 85%;
 }
 
 #grid, #list{
