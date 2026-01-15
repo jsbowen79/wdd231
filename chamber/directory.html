@@ -6,15 +6,21 @@
     <meta name="description" content="A listing of businesses, services, and business contacts for members of the Commerce City Chamber of Commerce.">
     <meta name="author" content="Joseph Bowen">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <meta property="og:title" content="Commerce City Chamber of Commerce Directory">
     <meta property="og:description" content="A listing of businesses, services, and business contacts for members of the Commerce City Chamber of Commerce.">
     <meta property="og:url" content="https://jsbowen79.github.io/wdd231/chamber/directory.html">
     <meta property="og:image" content="https://jsbowen79.github.io/wdd231/chamber/images/hero_1280x720.avif">
     <meta property="og:image:width" content="1280">
     <meta property="og:image:height" content="720">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap">
+    </noscript>
 
     <link rel="canonical" href="https://jsbowen79.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="https://jsbowen79.github.io/wdd231/chamber/chamber.ico">
@@ -26,11 +32,6 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/members.js" defer></script>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" as="style"
-        onload="this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap">
-    </noscript>
     <title>Commerce City Chamber of Commerce Directory</title>
 
 </head>
@@ -58,9 +59,10 @@
             images/hero_425X239.avif 425w,
             images/hero_850X478.avif 850w,
             images/hero_1280x720.avif 1280w"
-            sizes="
-            (max-width: 600px) 80vw,
-            90vw"
+            sizes=
+            "(max-width: 425px) 425px, 
+            (max-width: 1062px) 850px, 
+            1280px"
             decoding="async"
             loading="eager"
             fetchpriority="high"
@@ -74,12 +76,11 @@
     </main>
     <footer>
         <div class="address">
-            <h3>Commerce City Chamber of Commerce</h3>
-            <p>P.O. Box 1023 <br> 
-                Commerce City, CO 80022 <br>
-                info@4CChamber.com <br>
-                (720)864-1786
-            </p>
+            <h3>Commerce City <br>Chamber of Commerce</h3>
+            <p>P.O. Box 1023 </p> 
+            <p>Commerce City, CO 80022</p> 
+            <p>info@4CChamber.com</p>
+            <p>(720)864-1786</p>
         </div>
         <div class="social">
             <a href="https://www.facebook.com/joseph.bowen.94" target="_blank"><img src="../images/facebook.svg"
@@ -90,10 +91,10 @@
                 alt="Github logo" width="80" height="80"></a>
         </div>
         <div class="copyright">
-            <p>WDD231 Class Project <br>
-            Joseph Bowen</p>
+            <p>WDD231 Class Project</p>
+            <p>Joseph Bowen</p>
             <span id="currentyear">© 2026 Commerce City Chamber of Commerce</span> 
-            <p id="lastModified">Last Modified: -01142026195756-</p>
+            <p id="lastModified">Last Modified: 01/14/2026 19:57:56</p>
         </div>
     </footer>
 </body>
