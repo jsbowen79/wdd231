@@ -21,9 +21,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif; 
-    /*font-optical-sizing is a valid CSS Fonts Level 4 property and is supported by all modern
-    browsers.  W3C validator uses Fonts Level 3 and is not up to date.  Font-optical-sizing is 
-    recommended for the Raleway font.*/
     font-weight: 400; 
     color: var(--dark-gray)
 }
@@ -45,7 +42,6 @@ h2 {
 
 header{
     position: relative;  
-    /* border-bottom: 2px solid black;  */
     align-items: center;
     background-color: var(--dark-gray);
     display: grid; 
@@ -148,21 +144,17 @@ header img{
 
 /**********************************FOOTER***************************************/
 
-/* ---------- Footer Container ---------- */
 footer {
     display: flex;
     flex-direction: column;
-    /* stack on mobile */
     gap: 1rem;
-    /* spacing between sections */
     padding: 1rem 10px;
     background-color: var(--dark-gray);
     font-family: 'Roboto', sans-serif;
     font-display: swap;
-    /* reduce CLS from fonts */
+    padding-left:8%;
 }
 
-/* ---------- Text Styling ---------- */
 footer div h3,
 footer div a,
 footer div p,
@@ -170,20 +162,18 @@ footer div span {
     color: var(--gold);
     margin: 0;
     line-height: 1.2;
-    /* relative line height */
 }
 
-/* ---------- Address Section ---------- */
 .address {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    /* spacing between lines */
 }
 
 .address h3 {
     line-height: 1.2;
-    margin-left: ;
+}
+
 .address p {
     font-size: 0.75rem;
     line-height: 1.2;
@@ -221,7 +211,6 @@ footer div span {
 }
 
 .copyright {
-    text-align: center;
     font-size: 0.75rem;
     line-height: 1.2;
     margin: 0;
@@ -329,6 +318,7 @@ footer div span {
     padding: var(--standard);
     align-items: start;
     width: 85%;
+    justify-self: center; 
 }
 
 #grid, #list{
