@@ -6,6 +6,7 @@
 
     header img{
         width: 100px;
+        color: 
     }
 
     header span{
@@ -57,7 +58,6 @@
     footer{
         display: grid; 
         grid-template-columns: 1fr 1fr 1fr;
-        font-size: bigger;
     }    
 
     .copyright{

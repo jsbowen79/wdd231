@@ -29,11 +29,11 @@ html, body{
     background-color: var(--light-gray);
     max-width: 100%; 
     overflow-x: hidden; 
-    font-display: swap;
 }
+
 h2 {
     text-align: center;
-    background-color: var(--primary-blue);
+    background-color: var(--dark-gray);
     color: var(--white); 
     padding: var(--standard)
 
@@ -46,6 +46,7 @@ header{
     background-color: var(--dark-gray);
     display: grid; 
     grid-template-columns: 80px 1fr 80px;
+    color: var(gold); 
 }
 
 h1{
@@ -151,11 +152,11 @@ footer {
     padding: 1rem 10px;
     background-color: var(--dark-gray);
     font-family: 'Roboto', sans-serif;
-    font-display: swap;
+    /* font-display: swap; */
     padding-left:8%;
 }
 
-footer div h3,
+footer div h2,
 footer div a,
 footer div p,
 footer div span {
@@ -170,7 +171,7 @@ footer div span {
     gap: 0.25rem;
 }
 
-.address h3 {
+.address h2 {
     line-height: 1.2;
 }
 
