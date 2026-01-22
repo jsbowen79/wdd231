@@ -63,7 +63,7 @@
 
     }
 
-    h4{
+    h2, h3, h4, h5{
         font-size: 1.5rem;
     }
 
@@ -75,9 +75,53 @@
         height: 50px; 
     }
     .cards, .gridDisplay{
-        min-height: 800px;
+       min-height: 420px;
     }
    
+    .hero img{
+        max-width: 70vw;
+    }
+
+        /******************************Index Grid********************************/
+    
+        .indexGrid {
+            display: grid;
+            grid-template-columns: 1fr 250px 1fr;
+        }
+    
+        .events {
+            padding: var(--standard) var(--standard) var(--standard) 0;
+            margin-right: var(--large);
+            margin-bottom: 0; 
+        }
+    
+        tr,
+        th,
+        td {
+            font-size: 1rem;
+        }
+    
+        .currentWeather {
+            height: 100%;
+            margin-right: var(--large);
+        }
+    
+        .weatherForecast {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    
+    
+        .cta button{
+            font-size: 2rem;
+        }
+        .spotlight{
+            min-height: 400px;
+        }
+
+        .forecast{
+            min-height: 300px;
+        }
 }
 
 

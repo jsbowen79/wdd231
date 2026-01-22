@@ -4,7 +4,7 @@
     --bold: 900; 
     --standard: 5px; 
     --large: 10px; 
-    --selectable: 48px;
+    --selectable: 52px;
     
     --primary-blue: #002B7F;  /*Heads, Nav, buttons, icons */
     --secondary-blue: #4A74B5; /*links, hovers, icons*/
@@ -31,7 +31,8 @@ html, body{
     overflow-x: hidden; 
 }
 
-h2 {
+h2, h3, h4, h5 {
+    font-size: 1.5rem;
     text-align: center;
     background-color: var(--dark-gray);
     color: var(--white); 
@@ -238,17 +239,18 @@ footer div span {
 .hero img{
     width: 80%;
     height: auto; 
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/3;
     display: block;
     margin: 0 auto;
     max-width: 1000px;  
 }
 
-/********************************BUTTONS***************************************/
+/********************************GRID/LIST BUTTONS***************************************/
 
-.button {
+.button{
     display: flex;
     justify-content: space-around;
+    height: var(--selectable);
 }
 
 .button button{
@@ -263,15 +265,46 @@ footer div span {
 }
 
 
+/****************************CTA***********************/
+
+.cta{
+    height: var(--selectable);
+}
+
+.cta button{
+    display: block;
+    text-align: center; 
+    margin: 0 var(--large) ; 
+    background-color: var(--gold);
+    padding:0 var(--large); 
+    justify-self: center;
+    border-radius: var(--large);
+    cursor: pointer; 
+    height: var(--selectable)
+}
+
+.cta button:hover{
+    background-color: var(--success-green);
+
+}
+
 
 /************************************Cards*****************************************/
+.cards{
+    min-height: 2600px;
+}
 
+.card h5{
+    border-top-left-radius: var(--large);
+    border-top-right-radius: var(--large);
+}
 .card{
     width: 100%; 
     height: 100%;
     min-height: 400px;
     align-self: start;
     border: 2px solid var(--gold); 
+    border-radius: var(--large);
     display: flex; 
     flex-direction: column;
     justify-content: flex-start;
@@ -279,7 +312,7 @@ footer div span {
 
 .card img{
     display: block;
-    width: 100%; 
+    width: 95%; 
     max-width: 245px;
     height: auto; 
     border: 2px solid black;
@@ -295,6 +328,7 @@ footer div span {
     overflow-Wrap: anywhere; 
     text-decoration: none; 
     cursor: pointer;
+    margin: var(--standard)
 }
 
 .card a:hover{
@@ -310,10 +344,13 @@ footer div span {
     font-size: 1rem; 
 }
 
-.gridDisplay{
+.spotlight{
+    min-height: 1200px;
+}
+
+.gridDisplay, .spotlight{
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    min-height: 1700px;
     grid-gap: var(--large);
     background-color: var(--light-gray);
     border-radius: 5px;
@@ -332,3 +369,114 @@ footer div span {
     border: 2px solid var(--dark-gray); 
     margin: var(--standard);
 }
+
+.silver{
+    background-color: var(--dark-gray);
+    color:silver; 
+    padding: var(--standard); 
+    font-size: 1.2rem;
+}
+
+.gold{
+    padding: var(--standard); 
+    font-size: 1.3rem;
+    background-color: var(--dark-gray);
+    color: var(--gold); 
+}
+
+
+/******************************Index Grid********************************/
+
+.indexGrid{
+    display: block; 
+    margin-top: var(--large); 
+}
+.events{
+    padding: var(--standard);
+    border-radius: var(--standard);
+    background-color: var(--primary-blue);
+    border: solid black 2px; 
+    margin-bottom: var(--large);
+}
+
+.events table{
+    width: 100%; 
+    padding: var(--standard); 
+    border: none; 
+}
+
+tr, th, td{
+    color: var(--light-gray);
+    font-size: 0.75rem;
+}
+
+.events td:last-child, .events th:last-child{
+    text-align: right;
+}
+
+.currentWeather{
+    background-color: var(--gold);
+    padding: var(--standard);
+    height: 200px; 
+    border-radius: var(--standard); 
+    margin-bottom: var(--large);
+}
+
+.currentWeather img{
+    display: block; 
+    width: 70px;
+    height: 70px; 
+    margin: var(--standard) auto; 
+    background-color: var(--primary-blue);
+    border-radius: 100%;
+    border: solid black 2px; 
+    padding: 0 var(--small); 
+}
+
+
+.currentWeather p{
+    color: var(--primary-blue); 
+    width: 100%; 
+    text-align: center;
+}
+
+.forecast{
+background: var(--primary-blue); 
+padding: var(--standard); 
+border: 2px solid black;
+border-radius: var(--standard);
+min-height: 750px;
+}
+
+.weatherForecast{
+    display: flex; 
+    flex-direction: column;
+}
+
+.weatherForecast div{
+    display: block; 
+    width: 100%; 
+    padding: var(--large); 
+    border-bottom: 2px solid var(--light-gray); 
+}
+
+.temp{
+    width: 100%; 
+    text-align: center;
+}
+
+.weatherForecast p{
+    color: var(--light-gray);
+    text-align: center;
+}
+
+.weatherForecast img {
+    display: block; 
+    width: 70px; 
+    height: 70px;
+    background-color: var(--secondary-blue);
+    border: 2px solid black; 
+    border-radius: 100%;
+    margin: 0 auto; 
+}
+

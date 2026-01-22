@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to the Commerce City Chamber of Commerce website where you can connect with local entrepreneurs.  Join today!">
+    <meta name="author" content="Joseph Bowen">
+
+    <meta property="og:title" content="Commerce City Chamber of Commerce Home">
+    <meta property="og:description"
+        content="Welcome to the Commerce City Chamber of Commerce website where you can connect with local entrepreneurs.  Join today!">
+    <meta property="og:url" content="https://jsbowen79.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://jsbowen79.github.io/wdd231/chamber/images/hero_1280x720.avif">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap">
+    </noscript>
+
+    <link rel="canonical" href="https://jsbowen79.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="https://jsbowen79.github.io/wdd231/chamber/images/chamber.ico">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js"></script>
+    <title>Commerce City Chamber of Commerce Directory</title>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/chamber_logo.svg" alt="Commerce City Chamber of Commerce Logo">
+        <h1>Commerce City Chamber of Commerce</h1>
+        <button aria-label="Navigation" id="ham-btn" class="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="home current"><a href="https://jsbowen79.github.io/wdd231/chamber/index.html"><span class="checked">✓</span>Home</a></li>
+                <li class="directory"><a href="https://jsbowen79.github.io/wdd231/chamber/directory.html"><span></span>Directory</a></li>
+                <li class="join"><a href="#"><span></span>Join</a></li>
+                <li class="discover"><a href="#"><span></span>Discover</a></li>
+                <li class="unknown"><a href="#"><span></span>placeholder</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/hero_1500x1125.avif" alt="A photo of the Rocky Mountain Arsenal Wildlife Refuge in Commerce City"
+                width="1500" height="1125" srcset="
+                images/hero_400x300.avif 400w,
+                images/hero_700x525.avif 700w,
+                images/hero_850x638.avif 850w,
+                images/hero_1280x960.avif 1280w, 
+                images/hero_1500x1125.avif 1500w"
+                sizes="
+                (max-width: 600px) 80vw, 
+                (max-width: 1062px) 70vw,
+                1500px" decoding="async" loading="eager" fetchpriority="high">
+        </div>
+        <div class="indexGrid">
+            <div class="events">
+                <h2>Upcoming Events</h2>
+                <table class="events">
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td>Meet with the Chief of Police</td>
+                            <td>Jan 28, 2026</td>
+                        </tr>
+                        <td>Lunch & Learn (Real Estate Projections)</td>
+                        <td>Jan 31, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Chamber Annual Meeting</td>
+                        <td>Feb 8, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Lunch & Learn (Business Safety)</td>
+                        <td>Feb 16, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Meet the City Council</td>
+                        <td>Feb 21, 2026</td>
+                    </tr>
+                </tbody>
+
+                </table>
+
+            </div>
+            <div class="currentWeather">
+                <h3>Current Weather</h3>
+                <img id="weather-icon" src="" alt=""></img>
+                <p id="current-temp" class="temp"></p>
+                <p id="current_description"></p>
+            </div>
+
+            <div class="forecast">
+                <h4>Weather Forecast</h4>
+                <div class="weatherForecast"></div>
+            </div>
+        </div>
+        <div class="spotlight"></div>
+        <div class="cta">
+            <button>Click here to feature your business!</button>
+        </div>
+    </main>
+    <footer>
+        <div class="address">
+            <h6>Commerce City <br>Chamber of Commerce</h6>
+            <p>P.O. Box 1023 </p>
+            <p>Commerce City, CO 80022</p>
+            <p>info@4CChamber.com</p>
+            <p>(720)864-1786</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/joseph.bowen.94" target="_blank"><img src="../images/facebook.svg"
+                    alt="Facebook logo" width="80" height="80"></a>
+            <a href="https://www.linkedin.com/in/joseph-bowen-01b596233/" target="_blank"><img
+                    src="../images/linkedin.svg" alt="LinkedIn logo" width="80" height="80"></a>
+            <a href="https://github.com/jsbowen79" target="_blank"><img src="../images/github.svg" alt="Github logo"
+                    width="80" height="80"></a>
+        </div>
+        <div class="copyright">
+            <p>WDD231 Class Project</p>
+            <p>Joseph Bowen</p>
+            <span id="currentyear">© 2026 Commerce City Chamber of Commerce</span>
+            <p id="lastModified">Last Modified: 01/14/2026 19:57:56</p>
+        </div>
+    </footer>
+</body>
+
+</html>
