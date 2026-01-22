@@ -264,6 +264,7 @@ footer div span {
 
 .cta{
     height: var(--selectable);
+    margin: var(--large); 
 }
 
 .cta button{
