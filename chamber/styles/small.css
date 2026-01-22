@@ -96,8 +96,6 @@ header img{
     top: 100%;  
     right: 0px; 
     width: 150px; 
-    color: var(--white);
-    
     transform: translateX(100%); 
     opacity: 0;
     visibility: hidden;
@@ -154,8 +152,6 @@ footer {
     gap: 1rem;
     padding: 1rem 10px;
     background-color: var(--dark-gray);
-    font-family: 'Roboto', sans-serif;
-    /* font-display: swap; */
     padding-left:8%;
 }
 
@@ -216,7 +212,6 @@ footer div span {
 
 .copyright {
     font-size: 0.75rem;
-    line-height: 1.2;
     margin: 0;
 }
 
@@ -458,11 +453,6 @@ min-height: 750px;
     width: 100%; 
     padding: var(--large); 
     border-bottom: 2px solid var(--light-gray); 
-}
-
-.temp{
-    width: 100%; 
-    text-align: center;
 }
 
 .weatherForecast p{
