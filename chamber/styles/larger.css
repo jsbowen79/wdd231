@@ -122,8 +122,33 @@
         .forecast{
             min-height: 300px;
         }
+        
+        /************************************Form*******************************/
+        
+        
+        .formGrid{
+            display: grid; 
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        form{
+            grid-column: span 2;
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+        }
+        
+        .form{
+            grid-column: 1/2;
+            display: grid; 
+        }
+        
+        .membershipCards {
+            grid-column: 2/3; 
+        }
+        
+        .fullWidth{
+            grid-column: span 2;
+        }
 }
-
-
 
  

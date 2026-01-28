@@ -1,11 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Join the Commerce City Chamber of Commerce today to connect with local entrepreneurs and receive exclusive membership benefits.">
+    <meta name="author" content="Joseph Bowen">
+
+    <meta property="og:title" content="Commerce City Chamber of Commerce Join">
+    <meta property="og:description"
+        content="Join the Commerce City Chamber of Commerce today to connect with local entrepreneurs and receive exclusive membership benefits.">
+    <meta property="og:url" content="https://jsbowen79.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://jsbowen79.github.io/wdd231/chamber/images/hero_1280x720.avif">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    </noscript>
+    <link rel="canonical" href="https://jsbowen79.github.io/wdd231/chamber/join.html">
+    <link rel="icon" href="https://jsbowen79.github.io/wdd231/chamber/images/chamber.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <title>Commerce City Chamber of Commerce Join</title>
+
 </head>
+
 <body>
-    testing 123
+    <header>
+        <img src="images/chamber_logo.svg" alt="Commerce City Chamber of Commerce Logo">
+        <h1>Commerce City Chamber of Commerce</h1>
+        <button aria-label="Navigation" id="ham-btn" class="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="home current"><a href="https://jsbowen79.github.io/wdd231/chamber/index.html"><span
+                            class="checked">✓</span>Home</a></li>
+                <li class="directory"><a
+                        href="https://jsbowen79.github.io/wdd231/chamber/directory.html"><span></span>Directory</a></li>
+                <li class="join"><a href="#"><span></span>Join</a></li>
+                <li class="discover"><a href="#"><span></span>Discover</a></li>
+                <li class="unknown"><a href="#"><span></span>placeholder</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/hero_1500x1125.avif"
+                alt="A photo of people making a business deal." width="1500" height="1001"
+                srcset="
+                images/hero_400x267.avif 400w,
+                images/hero_700x467.avif 700w,
+                images/hero_850x567.avif 850w,
+                images/hero_1280x854.avif 1280w, 
+                images/hero_1500x1001.avif 1500w" sizes="
+                (max-width: 600px) 80vw, 
+                (max-width: 1062px) 70vw,
+                1500px" decoding="async" loading="eager" fetchpriority="high">
+        </div>
+        <h1 class="heading">Become a Member Today!</h1>
+        <div class="formGrid">
+
+           <form action="thankyou.html" method="get">
+                <div class="form">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" required title="Enter your first name" autocomplete="given-name" placeholder="First Name">
+                    <label for="lname">Last Name</label>
+                    <input type="text" required name="lname" id="lname" title="Enter your last name" autocomplete="family-name" placeholder="Last Name">
+                    <label for="org">Organization</label>
+                    <input type="text" name="org" id="org" required title="Please enter the name of your Organization" autocomplete="organization" placeholder="Organization Name">
+                    <label for="title">Organizational Title</label>
+                    <input type="text" name="title" id="title" autocomplete="organization-title" pattern="[a-zA-z\-\s]{7,}" title="Requires a minimum of 7 characters.  Only letters, hyphens(-), or spaces( ) allowed." placeholder="Organizational Title">
+                    <label for="email">Email Address</label>
+                    <input type="email" required name="email" id="email" autocomplete="email" placeholder="johndoe@commercecitychamber.net">
+                    <label for="mobilePhone">Mobile Phone</label>
+                    <input type="tel" name="mobilePhone" id="mobilePhone" required title="Please enter your Mobile Phone number." autocomplete="mobile" placeholder="(111)111-1111">
+                    <p class="membershipPrompt">Please select the membership level which interests you</p>
+                    <label for="np">Non Profit</label>
+                    <input type="radio" name="level" id="np" value="np">
+                    <label for="bronze">Bronze Membership</label>
+                    <input type="radio" name="level" id="bronze" value="bronze">
+                    <label for="silver">Silver Membership</label>
+                    <input type="radio" name="level" id="silver" value="silver">
+                    <label for="gold">Gold Membership</label>
+                    <input type="radio" name="level" id="gold" value="gold">
+                    <label class="membershipPrompt" for="orgDescription">Please Describe your Organization</label>
+                    <textarea name="orgDescription" id="orgDescription"></textarea>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                </div>
+                <div class="membershipCards">
+                    <h2>Available Membership Levels</h2>
+                    
+                    <div class="membershipCard nonprofit">
+                        <h3>Non-Profit</h3>
+                        <button class="joinbtn" id="npbttn" aria-label="Non-Profit Membership button">Click here to learn more!</button>
+                        <dialog>
+                            <h3>Non-Profit Membership Benefits</h3>
+                            <ul>
+                                <li>Listing in the Chamber Directory</li>
+                                <li>Discounted business add in Chamber Directory</li>
+                                <li>Member Pricing on events, workshops, and networking</li>
+                                <li>Member to Member discounts</li>
+                                <li>Volunteer opportunities for Chamber Committees</li>
+                                <li>Job postings on Chamber website</li>
+                                <li>Member Newsletter and updates</li>
+                                <li>Business Referrals</li>
+                                <li>Yearly Board Member Meet and Greet</li>
+                                <li>Discount on higher level membership packages</li>
+                                
+                            </ul>
+                            
+                            <p>Free for Non-Profit Organizations (501(C)(3) exempt status required)</p>
+                        </dialog>
+                    </div>
+                    <div class="membershipCard bronze">
+                        <h4>Bronze</h4>
+                        <button class="joinbtn" id="brnzbttn" aria-label="Bronze Membership button">Click here to learn more!</button>
+                        <dialog>
+                            <ul>
+                                <li>Listing in the Chamber Directory</li>
+                                <li>Discounted business add in Chamber Directory</li>
+                                <li>Free entrance to any 2 events, workshops, and networking</li>
+                                <li>Member Pricing on additional events, workshops, and networking</li>
+                                <li>Member to Member discounts</li>
+                                <li>Volunteer opportunities for Chamber Committees</li>
+                                <li>Job postings on Chamber website</li>
+                                <li>Member Newsletter and updates</li>
+                                <li>Business Referrals</li>
+                                <li>Yearly Board Member Meet and Greet</li>
+                                
+                                
+                            </ul>
+                            
+                            <p>Cost: Only $900</p>
+                        </dialog>
+                    </div>
+                    <div class="MembershipCard silver">
+                        <h5>Silver</h5>
+                        <button class="joinbtn" id="silverbttn" aria-label="Silver Membership button">Click here to learn more!</button>
+                        <dialog>
+                            <h5>Silver Membership Benefits</h5>
+                            <ul>
+                                <li>Listing in the Chamber Directory</li>
+                                <li>Discounted business add in Chamber Directory</li>
+                                <li>Free entrance to any 6 events, workshops, and networking</li>
+                                <li>Member Pricing on additional events, workshops, and networking</li>
+                                <li>Member to Member discounts</li>
+                                <li>Volunteer opportunities for Chamber Committees</li>
+                                <li>Job postings on Chamber website</li>
+                                <li>Member Newsletter and updates</li>
+                                <li>Business Referrals</li>
+                                <li>Yearly Board Member Meet and Greet</li>
+                                <li>Opportunity to host a Chambers networking event</li>
+                                <li>Free "Spotlight" on the Chamber Home page</li>
+                                <li>Opportunity to include information in the Chamber membership packet</li>
+                                <li>Promotion of your organization through Facebook posts</li>
+                                
+                            </ul>
+                            
+                            <p>Cost: $1,500</p>
+                        </dialog>
+                        
+                    </div>
+                    <div class="membershipCard gold">
+                        <h6>Gold</h6>
+                        <button class="joinbtn" id="goldbttn" aria-label="Gold Membership button">Click here to learn more!</button>
+                        <dialog>
+                            <h6>Gold Membership Benefits</h6>
+                            <ul>
+                                <li>One position on the Chamber Board of Directors</li>
+                                <li>Live Facebook interview promoting your organization</li>
+                                <li>Yearly Trustee RoundTable Attendance</li>
+                                <li>Legislative Advocacy</li>
+                                <li>Listing in the Chamber Directory</li>
+                                <li>Discounted business add in Chamber Directory</li>
+                                <li>Free entrance to any 6 events, workshops, and networking</li>
+                                <li>Member Pricing on additional events, workshops, and networking</li>
+                                <li>Member to Member discounts</li>
+                                <li>Volunteer opportunities for Chamber Committees</li>
+                                <li>Job postings on Chamber website</li>
+                                <li>Member Newsletter and updates</li>
+                                <li>Business Referrals</li>
+                                <li>Yearly Board Member Meet and Greet</li>
+                                <li>Opportunity to host 3 Chambers networking events</li>
+                                <li>Free "Spotlight" on the Chamber Home page</li>
+                                <li>Opportunity to include information in the Chamber membership packet</li>
+                                <li>Promotion of your organization through Facebook posts</li>
+                                <li>Ability to host up to 2 Chamber events</li>
+                                <li>Trustee recognition at Annual meeting</li>
+                            </ul>
+                            
+                            <p>Cost: $3,500</p>
+                            
+                        </dialog>
+                    </div>
+                </div>
+                <div class="fullWidth">
+                    <button type="submit" class="joinbtn">Get Membership Benefits Now!</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="address">
+            <h5>Commerce City <br>Chamber of Commerce</h5>
+            <p>P.O. Box 1023 </p>
+            <p>Commerce City, CO 80022</p>
+            <p>info@4CChamber.com</p>
+            <p>(720)864-1786</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/joseph.bowen.94" target="_blank"><img src="../images/facebook.svg"
+                    alt="Facebook logo" width="80" height="80"></a>
+            <a href="https://www.linkedin.com/in/joseph-bowen-01b596233/" target="_blank"><img
+                    src="../images/linkedin.svg" alt="LinkedIn logo" width="80" height="80"></a>
+            <a href="https://github.com/jsbowen79" target="_blank"><img src="../images/github.svg" alt="Github logo"
+                    width="80" height="80"></a>
+        </div>
+        <div class="copyright">
+            <p>WDD231 Class Project</p>
+            <p>Joseph Bowen</p>
+            <span id="currentyear">© 2026 Commerce City Chamber of Commerce</span>
+            <p id="lastModified">Last Modified: 01/14/2026 19:57:56</p>
+        </div>
+    </footer>
 </body>
+
 </html>

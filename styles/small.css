@@ -234,9 +234,32 @@ section figure img, section figure figcaption{
     text-align: center;
     padding: var(--standard);
     margin: var(--standard); 
-    /* color: var(--white); */
 
 }
+
 .courses span.taken{
   background-color: var(--success-green);  
+}
+
+#courseDetails{
+    background-color: var(--secondary-blue);
+    border: 2px solid var(--gold);
+    border-radius: var(--large);
+    text-align: center;
+    padding: var(standard); 
+    margin: var(standard); 
+}
+
+
+#courseDetails::backdrop{
+    background-color: var(--dark-gray);
+}
+
+#courseDetails button{
+    position: absolute; 
+    top: 25px; 
+    right: 25px;
+    padding: 1rem; 
+    border: 1px solid black;  
+
 }

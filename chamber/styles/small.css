@@ -31,7 +31,7 @@ html, body{
     overflow-x: hidden; 
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, h6, .heading {
     font-size: 1.5rem;
     text-align: center;
     background-color: var(--dark-gray);
@@ -262,12 +262,12 @@ footer div span {
 
 /****************************CTA***********************/
 
-.cta{
+.cta, .joinbtn{
     height: var(--selectable);
     margin: var(--large); 
 }
 
-.cta button{
+.cta button, .joinbtn{
     display: block;
     text-align: center; 
     margin: 0 var(--large) ; 
@@ -279,7 +279,7 @@ footer div span {
     height: var(--selectable)
 }
 
-.cta button:hover{
+.cta button:hover, .joinbtn:hover{
     background-color: var(--success-green);
 
 }
@@ -471,3 +471,89 @@ min-height: 750px;
     margin: 0 auto; 
 }
 
+/********************************Form*****************************/
+
+form{
+    grid-column: span 2;
+    display: block;
+}
+
+form label {
+    margin: var(--standard); 
+    height: var(--selectable); 
+    text-align: right;
+    margin-right: var(--large);
+    align-content: center;
+}
+
+form input{
+    margin: var(--standard);
+    height: var(--selectable); 
+    text-align: center; 
+}
+
+.membershipPrompt{
+    margin: var(--standard);
+    margin-top: var(--large); 
+    grid-column: span 2; 
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    text-align: center;
+    padding: var(--standard); 
+    font-size: 1rem;
+    height: var(--selectable);
+    align-content: center; 
+}
+
+input[type="radio"]{
+    justify-self: left;
+    width: 20px;  
+}
+
+textarea {
+    grid-column: span 2;
+    height: 80px;
+    margin: var(--standard); 
+}
+
+.joinbtn{
+    grid-column: span 2;
+    margin: var(--large);
+}
+
+.membershipCards, .membershipCards h2{
+    grid-column: span 2;
+    background: var(--primary-blue); 
+    justify-items: center;
+    margin: var(--large) 0;
+    padding-bottom: var(--large);
+}
+
+.membershipCard{
+    padding: var(--standard); 
+    margin: var(--large); 
+}
+
+.nonprofit{
+    background-color: var(--secondary-blue);
+}
+
+.bronze{
+    background-color: #CD7F32;
+}
+
+.silver {
+    background-color: silver;
+}
+
+.gold {
+    background-color: var(--gold);
+}
+
+.form{
+    display: grid; 
+    grid-template-columns: 2fr 3fr; 
+} 
+.formGrid{ 
+    display: block;
+ }

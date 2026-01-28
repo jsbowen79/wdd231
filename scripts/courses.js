@@ -96,6 +96,9 @@ function displayCourses(courseArray) {
     courseArray.forEach(course => {
         const courseEL = document.createElement('span');
         courseEL.textContent = `${course.subject} ${course.number}`;
+        courseEL.addEventListener('click', () => {
+            displayCourseDetails(course)
+        }); 
         if (course.completed == true) {
             courseEL.classList.add('taken'); 
             
@@ -130,3 +133,23 @@ cseCoursesEL.addEventListener('click', () => {
     const cseCourses = courses.filter(course => course.subject === "CSE");
     displayCourses(cseCourses); 
 })
+
+const modal = document.querySelector("#courseDetails"); 
+
+function displayCourseDetails(course) {
+    modal.innerHTML = `<button id='closeModal'>❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits<strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}
+        <p>${course.Description}</p>
+        <p><strong>Technologies</strong>: ${course.technology}</p>
+    `; 
+    modal.showModal(); 
+
+    closeModal = document.querySelector('#closeModal'); 
+
+    closeModal.addEventListener('click', () => {
+        modal.close();
+    }); 
+}
