@@ -366,24 +366,6 @@ footer div span {
     margin: var(--standard);
 }
 
-.silver{
-    background-color: var(--dark-gray);
-    padding: var(--standard); 
-    font-size: 1.2rem;
-    --fade-to: silver;
-    --backdrop-color: silver;
-    animation-delay: 4s;
-}
-
-.gold{
-    padding: var(--standard); 
-    font-size: 1.3rem;
-    background-color: var(--dark-gray);
-    --fade-to: var(--gold);
-    --backdrop-color: var(--gold);
-    animation-delay: 6s;
-    
-}
 
 
 /******************************Index Grid********************************/
@@ -442,11 +424,11 @@ tr, th, td{
 }
 
 .forecast{
-background: var(--primary-blue); 
-padding: var(--standard); 
-border: 2px solid black;
-border-radius: var(--standard);
-min-height: 750px;
+    background: var(--primary-blue); 
+    padding: var(--standard); 
+    border: 2px solid black;
+    border-radius: var(--standard);
+    min-height: 750px;
 }
 
 .weatherForecast{
@@ -540,17 +522,6 @@ textarea {
     animation: fadeColor 4s ease-in-out infinite alternate; 
 }
 
-.nonprofit{
-    --fade-to: var(--secondary-blue);
-    --backdrop-color: var(--secondary-blue); 
-}
-
-.bronze{
-    --fade-to: #CD7F32;
-    --backdrop-color: #cd7f32; 
-    animation-delay: 2s;
-
-}
 
 
 
@@ -560,22 +531,52 @@ textarea {
 } 
 .formGrid{ 
     display: block;
- }
+}
 
- /*******************************************Transitions********************************/
+/*******************************************Transitions********************************/
 
- @keyframes fadeColor {
-     from {
-         background-color: var(--primary-blue)
-     }
-     to{
+@keyframes fadeColor {
+    from {
+        background-color: var(--primary-blue)
+    }
+    to{
         background-color: var(--fade-to);
-     }
- }
+    }
+    
+}
+.nonprofit{
+    --fade-to: var(--secondary-blue);
+    --backdrop-color: var(--secondary-blue); 
+}
 
- /*************************************Modals*****************************************/
+.bronze{
+    --fade-to: #CD7F32;
+    --backdrop-color: #cd7f32; 
+    animation-delay: 2s;
+    
+}
 
- dialog{
+.silver{
+    background-color: var(--dark-gray);
+    padding: var(--standard); 
+    font-size: 1.2rem;
+    --fade-to: silver;
+    --backdrop-color: silver;
+    animation-delay: 4s;
+}
+
+.gold{
+    padding: var(--standard); 
+    font-size: 1.3rem;
+    background-color: var(--dark-gray);
+    --fade-to: var(--gold);
+    --backdrop-color: var(--gold);
+    animation-delay: 6s;
+    
+}
+/*************************************Modals*****************************************/
+
+dialog{
     width: 80%; 
     height: 80%; 
     background-color: var(--secondary-blue);
