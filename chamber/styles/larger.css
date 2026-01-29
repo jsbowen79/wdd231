@@ -149,6 +149,9 @@
         .fullWidth{
             grid-column: span 2;
         }
+
+        dialog ul li, dialog p{
+            font-size: 1.75rem;
+        }
 }
 
- 

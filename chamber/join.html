@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <title>Commerce City Chamber of Commerce Join</title>
 
 </head>
@@ -103,8 +104,8 @@
                     
                     <div class="membershipCard nonprofit">
                         <h3>Non-Profit</h3>
-                        <button class="joinbtn" id="npbttn" aria-label="Non-Profit Membership button">Click here to learn more!</button>
-                        <dialog>
+                        <button class="joinbtn" id="npbttn"  type="button" aria-label="Non-Profit Membership button">Click here to learn more!</button>
+                        <dialog id="npModal">
                             <h3>Non-Profit Membership Benefits</h3>
                             <ul>
                                 <li>Listing in the Chamber Directory</li>
@@ -121,12 +122,14 @@
                             </ul>
                             
                             <p>Free for Non-Profit Organizations (501(C)(3) exempt status required)</p>
+                            <button id="npClose">Close</button>
                         </dialog>
                     </div>
                     <div class="membershipCard bronze">
                         <h4>Bronze</h4>
-                        <button class="joinbtn" id="brnzbttn" aria-label="Bronze Membership button">Click here to learn more!</button>
-                        <dialog>
+                        <button type="button" class="joinbtn" id="brnzbttn" aria-label="Bronze Membership button">Click here to learn more!</button>
+                        <dialog id="brnzModal">
+                            <h4>Bronze Membership Benefits</h4>
                             <ul>
                                 <li>Listing in the Chamber Directory</li>
                                 <li>Discounted business add in Chamber Directory</li>
@@ -143,12 +146,13 @@
                             </ul>
                             
                             <p>Cost: Only $900</p>
+                            <button id="brnzClose">Close</button>
                         </dialog>
                     </div>
-                    <div class="MembershipCard silver">
+                    <div class="membershipCard silver">
                         <h5>Silver</h5>
-                        <button class="joinbtn" id="silverbttn" aria-label="Silver Membership button">Click here to learn more!</button>
-                        <dialog>
+                        <button type="button" class="joinbtn" id="silverbttn" aria-label="Silver Membership button">Click here to learn more!</button>
+                        <dialog id="silverModal">
                             <h5>Silver Membership Benefits</h5>
                             <ul>
                                 <li>Listing in the Chamber Directory</li>
@@ -169,13 +173,14 @@
                             </ul>
                             
                             <p>Cost: $1,500</p>
+                            <button id="silverClose">Close</button>
                         </dialog>
                         
                     </div>
                     <div class="membershipCard gold">
                         <h6>Gold</h6>
-                        <button class="joinbtn" id="goldbttn" aria-label="Gold Membership button">Click here to learn more!</button>
-                        <dialog>
+                        <button type="button" class="joinbtn" id="goldbttn" aria-label="Gold Membership button">Click here to learn more!</button>
+                        <dialog id="goldModal">
                             <h6>Gold Membership Benefits</h6>
                             <ul>
                                 <li>One position on the Chamber Board of Directors</li>
@@ -201,7 +206,7 @@
                             </ul>
                             
                             <p>Cost: $3,500</p>
-                            
+                            <button id="goldClose">Close</button>
                         </dialog>
                     </div>
                 </div>
@@ -213,7 +218,7 @@
     </main>
     <footer>
         <div class="address">
-            <h5>Commerce City <br>Chamber of Commerce</h5>
+            <h6>Commerce City <br>Chamber of Commerce</h6>
             <p>P.O. Box 1023 </p>
             <p>Commerce City, CO 80022</p>
             <p>info@4CChamber.com</p>
