@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const joinEL = document.querySelector('.join');
     const discoverEL = document.querySelector('.discover');
     const directoryEL = document.querySelector('.directory');
-    const unknownEL = document.querySelector('.unknown');
+    
     parentEL = document.querySelector('.navigation ul')
     childrenEL = parentEL.children;
     
@@ -63,9 +63,4 @@ document.addEventListener("DOMContentLoaded", () => {
         addCheckMark(discoverEL);
     })
     
-    unknownEL.addEventListener('click', () => {
-        removeCheckMarks();
-        unknownEL.classList.add('current');
-        addCheckMark(unknownEL);
-    })
 });
