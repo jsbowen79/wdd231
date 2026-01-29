@@ -368,16 +368,21 @@ footer div span {
 
 .silver{
     background-color: var(--dark-gray);
-    color:silver; 
     padding: var(--standard); 
     font-size: 1.2rem;
+    --fade-to: silver;
+    --backdrop-color: silver;
+    animation-delay: 4s;
 }
 
 .gold{
     padding: var(--standard); 
     font-size: 1.3rem;
     background-color: var(--dark-gray);
-    color: var(--gold); 
+    --fade-to: var(--gold);
+    --backdrop-color: var(--gold);
+    animation-delay: 6s;
+    
 }
 
 
@@ -547,17 +552,7 @@ textarea {
 
 }
 
-.silver {
-    --fade-to: silver;
-    --backdrop-color: silver; 
-    animation-delay: 4s;
-}
 
-.gold {
-    --fade-to: var(--gold);
-    --backdrop-color: var(--gold); 
-    animation-delay: 6s; 
-}
 
 .form{
     display: grid; 
@@ -585,7 +580,7 @@ textarea {
     height: 80%; 
     background-color: var(--secondary-blue);
     border: 1px solid var(--gold);
-    box-shadow: 0 0 10px var(--gold)/50%; 
+    box-shadow: 0 0 10px var(--dark-gray); 
     padding: 20px; 
     position: fixed; 
     left: 11%;
