@@ -473,29 +473,22 @@ form label {
     align-content: center;
 }
 
-form input{
+form input, select{
     margin: var(--standard);
     height: var(--selectable); 
     text-align: center; 
 }
 
 .membershipPrompt{
+    color: var(--dark-gray);
     margin: var(--standard);
     margin-top: var(--large); 
     grid-column: span 2; 
-    background-color: var(--dark-gray);
-    color: var(--light-gray);
-    text-align: center;
     padding: var(--standard); 
     font-size: 1rem;
-    height: var(--selectable);
-    align-content: center; 
+    text-align: left;
 }
 
-input[type="radio"]{
-    justify-self: left;
-    width: 20px;  
-}
 
 textarea {
     grid-column: span 2;
@@ -512,7 +505,6 @@ textarea {
     grid-column: span 2;
     background: var(--primary-blue); 
     justify-items: center;
-    margin: var(--large) 0;
     padding-bottom: var(--large);
 }
 
@@ -529,6 +521,7 @@ textarea {
     display: grid; 
     grid-template-columns: 2fr 3fr; 
 } 
+
 .formGrid{ 
     display: block;
 }

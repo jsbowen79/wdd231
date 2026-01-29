@@ -86,17 +86,14 @@
                     <input type="email" required name="email" id="email" autocomplete="email" placeholder="johndoe@commercecitychamber.net" title="Please enter your email.">
                     <label for="mobilePhone">Mobile Phone</label>
                     <input type="tel" name="mobilePhone" id="mobilePhone" required title="Please enter your Mobile Phone number." autocomplete="tel" placeholder="(111)111-1111">
-                    <fieldset>
-                        <legend class="membershipPrompt">Please select the membership level which interests you</legend>
-                        <label for="np">Non Profit</label>
-                        <input type="radio" name="level" id="np" value="np">
-                        <label for="bronze">Bronze Membership</label>
-                        <input type="radio" name="level" id="bronze" value="bronze">
-                        <label for="silver">Silver Membership</label>
-                        <input type="radio" name="level" id="silver" value="silver">
-                        <label for="gold">Gold Membership</label>
-                        <input type="radio" name="level" id="gold" value="gold">
-                    </fieldset>
+                    <label for="membership">Membership Level</label>
+                    <select id="membership" name="membership">
+                        <option>NP--Non-Profit</option>
+                        <option>Bronze</option>
+                        <option>Silver</option>
+                        <option>Gold</option>
+                    </select>
+   
                     <label class="membershipPrompt" for="orgDescription">Please Describe your Organization</label>
                     <textarea name="orgDescription" id="orgDescription" title="Please enter a description of your organization."></textarea>
                     <input type="hidden" id="timestamp" name="timestamp">
