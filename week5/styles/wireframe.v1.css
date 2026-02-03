@@ -82,12 +82,12 @@ th{
 
 header img{
     width: 150px; 
-    height: 115px; 
+    height: auto; 
 }
 
 img{
     width: 450px;
-    height: 402px; 
+    height: auto; 
 }
 
 
