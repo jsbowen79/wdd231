@@ -1,0 +1,93 @@
+:root {
+    --bg-primary: #F4F6F8;
+    --bg-secondary: #FFFFFF;
+    --bg-wayfinding: #E6EDF3;
+
+    --text-primary: #1F2933;
+    --text-wayfinding: #0F2A44;
+
+    --accent-structural: #0F2A44;
+    --accent-structural-text: #FFFFFF;
+
+    --accent-interactive: #1E6091;
+    --accent-interactive-text: #FFFFFF;
+
+    --crime-violent: #8B1E1E;
+    --crime-financial: #7A5C00;
+    --crime-traffic: #1F7A63;
+    --crime-drug: #6B4E9B;
+    --crime-other: #4B5563;
+
+    --font-primary: "Source Sans 3", sans-serif;
+    --font-secondary: "Inter Tight", sans-serif;  
+}
+
+*{
+    font-family: var(--font-primary); 
+    box-sizing: border-box;
+}
+
+h1, h2, h3{
+    font-family: var(--font-secondary);
+}
+
+header{
+    background-color: var(--accent-structural);
+    color: var(--accent-structural-text);
+}
+
+.primary{
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.secondary{
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.modal {
+    background-color: var(--accent-interactive);
+    color: var(--accent-interactive-text);
+}
+
+th{
+    color: var(--crime-drug);
+}
+
+.special td{
+    background-color: var(--bg-primary);
+}
+
+.financial td{
+    color: var(--crime-financial);
+}
+
+.traffic td{
+    color: var(--crime-traffic); 
+}
+
+.drug td{
+    color: var(--crime-drug); 
+}
+
+.other td{
+    color: var(--crime-other);
+}
+
+.wayfinding{
+    background-color: var(--bg-wayfinding);
+    color: var(--text-wayfinding); 
+}
+
+header img{
+    width: 150px; 
+}
+
+img{
+    width: 450px;
+}
+
+
+
+
