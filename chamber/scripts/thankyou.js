@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const timestamp = formInfo.get('timestamp'); 
 
 
-
+    message.setAttribute("class", "thankyou"); 
     message.innerHTML = `<br><br>${fname} ${lname} <br> <br>
     Thank you for submitting your application for membership on behalf of ${org}! <br><br>
     Your application will be reviewed shortly.  <br>

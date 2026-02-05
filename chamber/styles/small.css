@@ -315,7 +315,7 @@ footer div span {
     margin: var(--standard) 0; 
     align-self: center;  
 }
-.card p{
+.card p, .thankyou{
     margin: var(--standard);
 } 
 
@@ -467,10 +467,9 @@ form{
 
 form label {
     margin: var(--standard); 
-    height: var(--selectable); 
-    text-align: right;
     margin-right: var(--large);
     align-content: center;
+    padding-top: 12px; 
 }
 
 form input, select{
@@ -501,8 +500,14 @@ textarea {
     margin: var(--large);
 }
 
+.membershipCards{
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+}
+
 .membershipCards, .membershipCards h2{
-    grid-column: span 2;
     background: var(--primary-blue); 
     justify-items: center;
     padding-bottom: var(--large);
@@ -518,8 +523,8 @@ textarea {
 
 
 .form{
-    display: grid; 
-    grid-template-columns: 2fr 3fr; 
+    display: flex;
+    flex-direction: column; 
 } 
 
 .formGrid{ 
@@ -598,4 +603,73 @@ dialog::backdrop {
 dialog p{
     font-size: .75rem;
     color: var(--gold);
+}
+
+/******************************Discover Named Grid***************************************/
+
+.attractions div {
+    padding: var(--standard); 
+    border: 1px solid var(--gold); 
+    border-radius: 8px; 
+    overflow: hidden; 
+    display: grid; 
+    grid-template-areas: 
+    "name"
+    "photo"
+    "description"
+    "address";
+}
+
+.attraction :is(h2, figure, address, p, a){
+    color: var(--light-gray); 
+    padding: 12px 8px; 
+   
+}
+
+.attraction:nth-child(even) {
+background-color: var(--primary-blue);
+}
+
+.attraction:nth-child(odd){
+    background-color: var(--secondary-blue);
+}
+
+.attraction figure {
+    width: 100%;
+}
+.attraction figure img{
+    display: block;
+    padding: 8px 0  ; 
+    justify-self: center;  
+    width: 80%; 
+    height:auto; 
+    object-fit: cover;
+
+}
+
+.attraction h2{
+    grid-area: name; 
+}
+
+.attraction figure{
+    grid-area: photo; 
+}
+
+.attraction address{
+    grid-area: address; 
+}
+
+.attraction p {
+    grid-area: description; 
+}
+
+@media screen and (min-width: 621px){
+
+    .attractions div{
+        grid-template-areas: 
+        "photo name"
+        "photo description"
+        "photo  address" ;
+    }
+
 }

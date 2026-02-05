@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="A listing of businesses, services, and business contacts for members of the Commerce City Chamber of Commerce.">
+        content="Familiarize yourself with local shopping and entertainment venues in Commerce City.">
     <meta name="author" content="Joseph Bowen">
 
-    <meta property="og:title" content="Commerce City Chamber of Commerce Directory">
+    <meta property="og:title" content="Commerce City Chamber of Commerce Discover">
     <meta property="og:description"
-        content="A listing of businesses, services, and business contacts for members of the Commerce City Chamber of Commerce.">
-    <meta property="og:url" content="https://jsbowen79.github.io/wdd231/chamber/directory.html">
+        content="Familiarize yourself with local shopping and entertainment venues in Commerce City.">
+    <meta property="og:url" content="https://jsbowen79.github.io/wdd231/chamber/discover.html">
     <meta property="og:image" content="https://jsbowen79.github.io/wdd231/chamber/images/hero_1280x720.avif">
     <meta property="og:image:width" content="1280">
     <meta property="og:image:height" content="720">
@@ -32,9 +32,11 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/largest.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/footer.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script type="module" src="data/interestItems.mjs"></script>
+    <script type="module" src="scripts/discover.js" defer></script>
     <title>Commerce City Chamber of Commerce Directory</title>
 
 </head>
@@ -48,12 +50,12 @@
             <ul>
                 <li class="home"><a href="https://jsbowen79.github.io/wdd231/chamber/index.html"><span></span>Home</a>
                 </li>
-                <li class="directory current"><a href="https://jsbowen79.github.io/wdd231/chamber/directory.html"><span
-                            class="checked">✓</span>Directory</a></li>
+                <li class="directory"><a href="https://jsbowen79.github.io/wdd231/chamber/directory.html"><span
+                           ></span>Directory</a></li>
                 <li class="join"><a href="https://jsbowen79.github.io/wdd231/chamber/join.html"><span></span>Join</a>
                 </li>
-                <li class="discover"><a
-                        href="https://jsbowen79.github.io/wdd231/chamber/discover.html"><span></span>Discover</a></li>
+                <li class="discover current"><a
+                        href="https://jsbowen79.github.io/wdd231/chamber/discover.html"><span class="checked">✓</span>Discover</a></li>
             </ul>
         </nav>
     </header>
@@ -68,10 +70,67 @@
             (max-width: 1062px) 850px, 
             1280px" decoding="async" loading="eager" fetchpriority="high">
         </div>
-        <p>Discover Page
-        </p>
-    </main>
+        <div class="attractions">
 
+            <div class="attraction" data-key="Rocky Mountain Arsenal Wildlife Refuge">
+                <h2></h2>
+                <figure></figure>
+                <address></address>
+                <p></p>
+                
+            </div>
+            <div class="attraction" data-key="Sand Creek Regional Greenway">
+                <h2></h2>
+                <figure></figure>
+                <address></address>
+                <p></p>
+                
+            </div>
+            <div class="attraction" data-key="Historic Derby">
+                <h2></h2>
+                <figure></figure>
+                <address></address>
+                <p></p>
+                
+            </div>
+            <div class="attraction" data-key="Commerce City Museum">
+                <h2></h2>
+                <figure></figure>
+                <address></address>
+                <p></p>
+                
+            </div>
+            <div class="attraction" data-key="Buffalo Run Golf Course">
+                <h2></h2>
+                <figure></figure>
+                <address></address>
+                <p></p>
+                
+            </div>
+            <div class="attraction" data-key="Paradise Island at Pioneer Park">
+                <h2></h2>
+                <figure></figure>
+                <address></address>
+                <p></p>
+                
+            </div>
+            <div class="attraction" data-key="88 DriveIn Theater">
+                <h2></h2>
+                <figure></figure>
+                <address></address>
+                <p></p>
+                
+            </div>
+            <div class="attraction" data-key="Mile High Flea Market">
+                <h2></h2>
+                <figure></figure>
+                <address></address>
+                <p></p>
+                
+            </div>
+        </div>
+    </main>
+        
     <footer>
         <div class="address">
             <h2>Commerce City <br>Chamber of Commerce</h2>
@@ -81,12 +140,12 @@
             <p>(720)864-1786</p>
         </div>
         <div class="social">
-            <a href="https://www.facebook.com/joseph.bowen.94" target="_blank"><img src="../images/facebook.svg"
-                    alt="Facebook logo" width="80" height="80"></a>
-            <a href="https://www.linkedin.com/in/joseph-bowen-01b596233/" target="_blank"><img
-                    src="../images/linkedin.svg" alt="LinkedIn logo" width="80" height="80"></a>
-            <a href="https://github.com/jsbowen79" target="_blank"><img src="../images/github.svg" alt="Github logo"
-                    width="80" height="80"></a>
+        <a href="https://www.facebook.com/joseph.bowen.94" target="_blank"><img src="../images/facebook.svg"
+                alt="Facebook logo" width="80" height="80"></a>
+        <a href="https://www.linkedin.com/in/joseph-bowen-01b596233/" target="_blank"><img
+                src="../images/linkedin.svg" alt="LinkedIn logo" width="80" height="80"></a>
+        <a href="https://github.com/jsbowen79" target="_blank"><img src="../images/github.svg" alt="Github logo"
+                width="80" height="80"></a>
         </div>
         <div class="copyright">
             <p>WDD231 Class Project</p>

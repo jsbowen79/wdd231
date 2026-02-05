@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 641px) {
 
     header{
         grid-template-columns: 110px 1fr;
@@ -136,12 +136,7 @@
             display: grid; 
             grid-template-columns: 1fr 1fr; 
         }
-        
-        .form{
-            grid-column: 1/2;
-            display: grid; 
-        }
-        
+
         .membershipCards {
             grid-column: 2/3; 
         }
@@ -153,5 +148,14 @@
         dialog ul li, dialog p{
             font-size: 1.75rem;
         }
+
+/*************************************Discover****************************/
+
+    .attractions div {
+        grid-template-areas:
+            "photo name"
+            "photo description"
+            "photo  address";
+    }
 }
 
