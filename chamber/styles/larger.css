@@ -160,7 +160,7 @@
     }
 
     .attraction figure img{
-        transform: 0.3s ease; 
+       transition: transform 0.3s ease; 
     }
 
     .attraction figure img:hover{

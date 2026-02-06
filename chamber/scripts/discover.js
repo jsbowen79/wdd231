@@ -1,4 +1,4 @@
-import { jsonData } from "../data/interestItems.mjs"; 
+import { jsonData } from "../data/attractions.mjs"; 
 
 document.addEventListener("DOMContentLoaded", () => {
 

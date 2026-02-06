@@ -640,7 +640,9 @@ color: var(--dark-gray);
 
 .attraction figure {
     width: 100%;
+    grid-area: photo; 
 }
+
 .attraction figure img{
     display: block;
     padding: 8px 0  ; 
@@ -653,10 +655,6 @@ color: var(--dark-gray);
 
 .attraction h2{
     grid-area: name; 
-}
-
-.attraction figure{
-    grid-area: photo; 
 }
 
 .attraction address{
