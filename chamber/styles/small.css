@@ -234,7 +234,7 @@ footer div span {
 .hero img{
     width: 80%;
     height: auto; 
-    /* aspect-ratio: 4/3; */
+    min-height: 143px; 
     display: block;
     margin: 0 auto;
     max-width: 1000px;  
@@ -608,8 +608,8 @@ dialog p{
 /******************************Discover Named Grid***************************************/
 
 .attractions div {
+    min-height: 490px;
     padding: var(--standard); 
-    border: 1px solid var(--gold); 
     border-radius: 8px; 
     overflow: hidden; 
     display: grid; 
@@ -622,17 +622,21 @@ dialog p{
 
 .attraction :is(h2, figure, address, p, a){
     color: var(--light-gray); 
-    padding: 12px 8px; 
-   
+    padding: 7px; 
+    
 }
 
-.attraction:nth-child(even) {
-background-color: var(--primary-blue);
+.attraction {
+    background-color: var(--primary-blue);
+    color: var(--dark-gray); 
+    margin: var(--standard); 
 }
 
-.attraction:nth-child(odd){
-    background-color: var(--secondary-blue);
+.attraction:nth-child(even), .attraction:nth-child(even) *  {
+background-color: var(--gold);
+color: var(--dark-gray); 
 }
+
 
 .attraction figure {
     width: 100%;
@@ -641,8 +645,8 @@ background-color: var(--primary-blue);
     display: block;
     padding: 8px 0  ; 
     justify-self: center;  
-    width: 80%; 
-    height:auto; 
+    width: 280px; 
+    height:200px; 
     object-fit: cover;
 
 }
@@ -663,13 +667,9 @@ background-color: var(--primary-blue);
     grid-area: description; 
 }
 
-@media screen and (min-width: 621px){
-
-    .attractions div{
-        grid-template-areas: 
-        "photo name"
-        "photo description"
-        "photo  address" ;
-    }
-
+#returnMessage{
+    font-size: 1.5rem;
+    color: var(--gold);
+    padding: var(--standard); 
+    text-align: center;
 }

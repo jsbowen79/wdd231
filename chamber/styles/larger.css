@@ -156,6 +156,15 @@
             "photo name"
             "photo description"
             "photo  address";
+        min-height: 50px; 
+    }
+
+    .attraction figure img{
+        transform: 0.3s ease; 
+    }
+
+    .attraction figure img:hover{
+        transform: scale(1.5); 
     }
 }
 

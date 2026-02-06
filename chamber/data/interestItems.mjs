@@ -5,7 +5,7 @@ export const jsonData = {
         {
             "name": "Rocky Mountain Arsenal Wildlife Refuge", 
             "address": "6550 Gateway Road",
-            "description" : "The Rocky Mountain Arsenal was a Cold War era chemical weapons manufacturing site which became an EPA listed SuperFund cleanup site.  It has been transformed into one of the largest urban wildlife refuges in the United States, hosting over 330 species of animals including bison, bald eagles, deer, coyotes, and the endangered black footed ferret.",
+            "description" : "The Rocky Mountain Arsenal was a Cold War era chemical weapons manufacturing site which has been transformed into a large urban wildlife refuge hosting over 330 species.",
             "website": "https://www.fws.gov/refuge/rocky-mountain-arsenal",
             "photo" : "images/arsenal.webp"
         },
