@@ -1,0 +1,263 @@
+{
+    "objectIdFieldName": "OBJECTID",
+    "uniqueIdField": {
+        "name": "OBJECTID",
+        "isSystemMaintained": true
+    },
+    "globalIdFieldName": "",
+    "geometryType": "esriGeometryPoint",
+    "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+    },
+    "fields": [
+        {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "REPORTED_DATE",
+            "type": "esriFieldTypeDate",
+            "alias": "REPORTED_DATE",
+            "sqlType": "sqlTypeOther",
+            "length": 8,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "INCIDENT_ADDRESS",
+            "type": "esriFieldTypeString",
+            "alias": "INCIDENT_ADDRESS",
+            "sqlType": "sqlTypeOther",
+            "length": 100,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "GEO_LON",
+            "type": "esriFieldTypeDouble",
+            "alias": "GEO_LON",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "GEO_LAT",
+            "type": "esriFieldTypeDouble",
+            "alias": "GEO_LAT",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NEIGHBORHOOD",
+            "type": "esriFieldTypeString",
+            "alias": "NEIGHBORHOOD",
+            "sqlType": "sqlTypeOther",
+            "length": 100,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "REPORTER_NAME",
+            "type": "esriFieldTypeString",
+            "alias": "REPORTER_NAME",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "REPORTER_EMAIL",
+            "type": "esriFieldTypeString",
+            "alias": "REPORTER_EMAIL",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "REPORTER_PHONE",
+            "type": "esriFieldTypeString",
+            "alias": "REPORTER_PHONE",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NARRATIVE",
+            "type": "esriFieldTypeString",
+            "alias": "NARRATIVE",
+            "sqlType": "sqlTypeOther",
+            "length": 255,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "OFFENSECATEGORY",
+            "type": "esriFieldTypeInteger",
+            "alias": "OFFENSECATEGORY",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        }
+    ],
+    "exceededTransferLimit": true,
+    "features": [
+        {
+            "attributes": {
+                "OBJECTID": 28734,
+                "REPORTED_DATE": 1533038400000,
+                "INCIDENT_ADDRESS": "E COLFAX AVE / N DOWNING ST",
+                "GEO_LON": -104.9730966,
+                "GEO_LAT": 39.7400317,
+                "NEIGHBORHOOD": "capitol-hill",
+                "REPORTER_NAME": null,
+                "REPORTER_EMAIL": null,
+                "REPORTER_PHONE": null,
+                "NARRATIVE": null,
+                "OFFENSECATEGORY": 1
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 28758,
+                "REPORTED_DATE": 1533038400000,
+                "INCIDENT_ADDRESS": "I70 HWYWB / N WASHINGTON ST",
+                "GEO_LON": -104.9791603,
+                "GEO_LAT": 39.7796753,
+                "NEIGHBORHOOD": "globeville",
+                "REPORTER_NAME": null,
+                "REPORTER_EMAIL": null,
+                "REPORTER_PHONE": null,
+                "NARRATIVE": null,
+                "OFFENSECATEGORY": 2
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 28764,
+                "REPORTED_DATE": 1533038400000,
+                "INCIDENT_ADDRESS": " ",
+                "GEO_LON": -105.0381857,
+                "GEO_LAT": 39.6589125,
+                "NEIGHBORHOOD": "harvey-park-south",
+                "REPORTER_NAME": null,
+                "REPORTER_EMAIL": null,
+                "REPORTER_PHONE": null,
+                "NARRATIVE": null,
+                "OFFENSECATEGORY": 10
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 28770,
+                "REPORTED_DATE": 1533038400000,
+                "INCIDENT_ADDRESS": "1515 DELGANY ST",
+                "GEO_LON": -105.0038119,
+                "GEO_LAT": 39.7527577,
+                "NEIGHBORHOOD": "union-station",
+                "REPORTER_NAME": null,
+                "REPORTER_EMAIL": null,
+                "REPORTER_PHONE": null,
+                "NARRATIVE": null,
+                "OFFENSECATEGORY": 6
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 28778,
+                "REPORTED_DATE": 1533038400000,
+                "INCIDENT_ADDRESS": "3935 N QUEBEC ST",
+                "GEO_LON": -104.9037886,
+                "GEO_LAT": 39.7716366,
+                "NEIGHBORHOOD": "northeast-park-hill",
+                "REPORTER_NAME": null,
+                "REPORTER_EMAIL": null,
+                "REPORTER_PHONE": null,
+                "NARRATIVE": null,
+                "OFFENSECATEGORY": 9
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 29277,
+                "REPORTED_DATE": 1533038400000,
+                "INCIDENT_ADDRESS": "E HAMPDEN AVE / S DAYTON ST",
+                "GEO_LON": -104.8756583,
+                "GEO_LAT": 39.6530496,
+                "NEIGHBORHOOD": "kennedy",
+                "REPORTER_NAME": null,
+                "REPORTER_EMAIL": null,
+                "REPORTER_PHONE": null,
+                "NARRATIVE": null,
+                "OFFENSECATEGORY": 2
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 29293,
+                "REPORTED_DATE": 1533038400000,
+                "INCIDENT_ADDRESS": "S SANTA FE DR / W BYERS PL",
+                "GEO_LON": -104.9976395,
+                "GEO_LAT": 39.7122799,
+                "NEIGHBORHOOD": "baker",
+                "REPORTER_NAME": null,
+                "REPORTER_EMAIL": null,
+                "REPORTER_PHONE": null,
+                "NARRATIVE": null,
+                "OFFENSECATEGORY": 2
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 29294,
+                "REPORTED_DATE": 1533038400000,
+                "INCIDENT_ADDRESS": "900 BLOCK E 14TH AVE",
+                "GEO_LON": -104.9761744,
+                "GEO_LAT": 39.7383516,
+                "NEIGHBORHOOD": "capitol-hill",
+                "REPORTER_NAME": null,
+                "REPORTER_EMAIL": null,
+                "REPORTER_PHONE": null,
+                "NARRATIVE": null,
+                "OFFENSECATEGORY": 2
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 29341,
+                "REPORTED_DATE": 1533038400000,
+                "INCIDENT_ADDRESS": " ",
+                "GEO_LON": -104.9916676,
+                "GEO_LAT": 39.7412718,
+                "NEIGHBORHOOD": "cbd",
+                "REPORTER_NAME": null,
+                "REPORTER_EMAIL": null,
+                "REPORTER_PHONE": null,
+                "NARRATIVE": null,
+                "OFFENSECATEGORY": 2
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 29782,
+                "REPORTED_DATE": 1533038400000,
+                "INCIDENT_ADDRESS": "W HOLDEN PL / N DECATUR ST",
+                "GEO_LON": -105.0217649,
+                "GEO_LAT": 39.7356604,
+                "NEIGHBORHOOD": "sun-valley",
+                "REPORTER_NAME": null,
+                "REPORTER_EMAIL": null,
+                "REPORTER_PHONE": null,
+                "NARRATIVE": null,
+                "OFFENSECATEGORY": 2
+            }
+        },
+        {
+            "attributes":

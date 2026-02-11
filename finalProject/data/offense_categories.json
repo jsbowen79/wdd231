@@ -1,0 +1,120 @@
+{
+    "categories": {
+        "Violent": {
+            "description": "Crimes involving force or threat of force",
+            "codes": [
+                1,
+                8,
+                11,
+                9
+            ]
+        },
+        "Property": {
+            "description": "Crimes involving theft or damage to property",
+            "codes": [
+                4,
+                5,
+                7,
+                12
+            ]
+        },
+        "Public Safety": {
+            "description": "Public disorder and substance-related offenses",
+            "codes": [
+                6,
+                10
+            ]
+        },
+        "Traffic": {
+            "description": "Vehicle accidents and traffic-related incidents",
+            "codes": [
+                13
+            ]
+        },
+        "Financial": {
+            "description": "Fraud and white-collar offenses",
+            "codes": [
+                14
+            ]
+        },
+        "Other": {
+            "description": "All other uncategorized crimes",
+            "codes": [
+                2,
+                3
+            ]
+        }
+    },
+    "offenseLookup": {
+        "1": {
+            "name": "Aggravated Assault",
+            "group": "Violent",
+            "color": "#d73027"
+        },
+        "2": {
+            "name": "All Other Crimes",
+            "group": "Other",
+            "color": "#999999"
+        },
+        "3": {
+            "name": "Arson",
+            "group": "Other",
+            "color": "#ff6600"
+        },
+        "4": {
+            "name": "Auto Theft",
+            "group": "Property",
+            "color": "#1f78b4"
+        },
+        "5": {
+            "name": "Burglary",
+            "group": "Property",
+            "color": "#33a02c"
+        },
+        "6": {
+            "name": "Drug-Alcohol Related",
+            "group": "Public Safety",
+            "color": "#6a3d9a"
+        },
+        "7": {
+            "name": "Larceny",
+            "group": "Property",
+            "color": "#b2df8a"
+        },
+        "8": {
+            "name": "Murder",
+            "group": "Violent",
+            "color": "#000000"
+        },
+        "9": {
+            "name": "Other Crimes Against Persons",
+            "group": "Violent",
+            "color": "#fb9a99"
+        },
+        "10": {
+            "name": "Public Disorder",
+            "group": "Public Safety",
+            "color": "#cab2d6"
+        },
+        "11": {
+            "name": "Robbery",
+            "group": "Violent",
+            "color": "#e31a1c"
+        },
+        "12": {
+            "name": "Theft From Motor Vehicle",
+            "group": "Property",
+            "color": "#a6cee3"
+        },
+        "13": {
+            "name": "Traffic Accident",
+            "group": "Traffic",
+            "color": "#fdbf6f"
+        },
+        "14": {
+            "name": "White Collar Crime",
+            "group": "Financial",
+            "color": "#ffcc00"
+        }
+    }
+}

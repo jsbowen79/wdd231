@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to the Denver Crime Awareness Center where you can learn about the safety of your community and report safety issues to the authorities!">
+    <meta name="author" content="Joseph Bowen">
+
+    <meta property="og:title" content="Denver Crime Awareness Center Home">
+    <meta property="og:description"
+        content="Welcome to the Denver Crime Awareness Center where you can learn about the safety of your community and report safety issues to the authorities!">
+    <meta property="og:url" content="https://jsbowen79.github.io/wdd231/finalproject/index.html">
+    <meta property="og:image" content="https://jsbowen79.github.io/wdd231/finalproject/hero_1280x852.avif">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="852">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
+    </noscript>
+    <link rel="canonical" href="https://jsbowen79.github.io/wdd231/finalproject/index.html">
+    <link rel="icon" href="https://jsbowen79.github.io/wdd231/finalproject/images/denver_crime_awareness_favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/footer.js"></script>
+    <script type="module" src="scripts/fetch_crimes.js"></script>
+    <script type="module" src="scripts/homepage.js"></script>
+    <title>Denver Crime Awareness Center Homepage</title>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/crime_awareness_logo.avif" alt="Denver Crime Awareness Center Logo">
+        <h1>Denver Crime Awareness Center</h1>
+        <button aria-label="Navigation" id="ham-btn" class="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="home current"><a href="https://jsbowen79.github.io/wdd231/finalproject/index.html"><span
+                            class="checked">✓</span>Home</a></li>
+                <li class="incidents"><a
+                        href="https://jsbowen79.github.io/wdd231/finalproject/incidents.html"><span></span>Incidents</a></li>
+                <li class="report"><a href="https://jsbowen79.github.io/wdd231/finalproject/report.html"><span></span>Report</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/hero_1500x999.avif"
+                alt="A picture a a Policeman on the far side of a police line that says 'Do Not Cross'."  width="1500" height="999"
+                srcset="
+                images/hero_400x300.avif 400w,
+                images/hero_700x466.avif 700w,
+                images/hero_850x566.avif 850w,
+                images/hero_1280x852.avif 1280w, 
+                images/hero_1500x999.avif 1500w" sizes="
+                (max-width: 600px) 80vw, 
+                (max-width: 1062px) 70vw,
+                1500px" decoding="async" loading="eager" fetchpriority="high">
+        </div>
+        <div class="intro">
+
+            <h2>Denver Communities Fighting Crime through Crime Awareness</h2>
+            <p>
+                There were an average of 19.6 violent crimes per day in Denver in 2024.  During the same time period, Denver experienced an average 
+                of 94.2 property crimes per day.<sup>1</sup>  This works out to over 110 crime victims for each day of the year. 
+            </p>
+                
+                <h3>"Crime Prevention Cannot work without you.  The importance of crime prevention comes from the involvement of the community working together
+                    with law enforcement..."--Richard Arrington<sup>2</sup>.
+                </h3>
+                <p>The Denver Crime Awareness Center is committed do reducing crime through education and community involvement.  We strive to 
+                    provide you with the most up to date data on crime available in Denver.  Help us decrease your chances of becoming one of 
+                    those 110 daily crime victims.
+                </p>
+        </div>
+        <div class="recentCrimes">
+            <table>
+                <thead>
+                    <th>Date</th>
+                    <th>Offense Type</th>
+                    <th>Category</th>
+                    <th>Neighborhood</th>
+                    <th>Details</th>
+                </thead>
+                <tbody class="crimes">
+
+                </tbody>
+
+            </table>
+        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </main>
+                    <footer>
+                        <div class="address">
+            <h5>Denver Crime Awareness<br>Center</h5>
+            <p>P.O. Box 11045 </p>
+            <p>Commerce City, CO 80022</p>
+            <p>info@denvercrime.net</p>
+            <p>(720)471-0211</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/denverpolice/" target="_blank"><img src="../images/facebook.svg"
+                    alt="Facebook logo" width="80" height="80"></a>
+            <a href="https://www.linkedin.com/company/denver-police-department/" target="_blank"><img
+                    src="../images/linkedin.svg" alt="LinkedIn logo" width="80" height="80"></a>
+            <a href="https://x.com/DenverPolice" target="_blank"><img src="../images/github.svg" alt="Github logo"
+                    width="80" height="80"></a>
+        </div>
+        <div class="copyright">
+            <p>Denver Crime Awareness Center</p>
+            <p>Joseph Bowen</p>
+            <span id="currentyear">© 2026 Denver Crime Awareness Center</span>
+            <p id="lastModified">Last Modified: 01/14/2026 19:57:56</p>
+        </div>
+    </footer>
+</body>
+
+</html>
