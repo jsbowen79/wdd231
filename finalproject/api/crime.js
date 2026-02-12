@@ -22,7 +22,7 @@
 export default async function handler(req, res) {
     try {
         const url =
-            "https://data.denvergov.org/resource/3nai-9n6v.json?$limit=100&$order=reported_date%20DESC";
+            "https://data.denvergov.org/api/resource/3nai-9n6v.json?$limit=100&$order=reported_date%20DESC";
 
         const response = await fetch(url);
 
