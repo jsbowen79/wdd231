@@ -21,32 +21,49 @@
 
 //force update
   
+// export default async function handler(req, res) {
+//     try {
+//         const url =
+//             "https://data.denvergov.org/api/resource/3nai-9n6v.json?$limit=100&$order=reported_date%20DESC";
+
+//         const response = await fetch(url);
+
+//         const text = await response.text(); // capture raw response
+
+//         if (!response.ok) {
+//             return res.status(response.status).json({
+//                 error: "Denver API error",
+//                 status: response.status,
+//                 body: text
+//             });
+//         }
+
+//         const data = JSON.parse(text);
+
+//         res.setHeader("Access-Control-Allow-Origin", "*");
+//         res.status(200).json(data);
+
+//     } catch (error) {
+//         res.status(500).json({
+//             error: "Serverless Function Error",
+//             message: error.message
+//         });
+//     }
+// }
 export default async function handler(req, res) {
     try {
         const url =
-            "https://data.denvergov.org/api/resource/3nai-9n6v.json?$limit=100&$order=reported_date%20DESC";
+            "https://data.denvergov.org/resource/3nai-9n6v.json?$limit=5";
 
         const response = await fetch(url);
 
-        const text = await response.text(); // capture raw response
+        const text = await response.text();
 
-        if (!response.ok) {
-            return res.status(response.status).json({
-                error: "Denver API error",
-                status: response.status,
-                body: text
-            });
-        }
-
-        const data = JSON.parse(text);
-
-        res.setHeader("Access-Control-Allow-Origin", "*");
-        res.status(200).json(data);
+        return res.status(200).send(text);
 
     } catch (error) {
-        res.status(500).json({
-            error: "Serverless Function Error",
-            message: error.message
+        return res.status(500).json({
+            error: error.message
         });
     }
 }
