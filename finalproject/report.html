@@ -84,50 +84,51 @@
                 <div class="report_img limited something">
                     <img  src="images/saysomething.avif" alt="If you see something, say something" loading="lazy">
                 </div>
-            </div>
+        </div>
         <h4>Report Suspected Crimes to the Police!</h4>
         <p class="center">In an emergency, always dial 911.  To report a crime anonymously, fill out the following form.</p>
         <div class="anonymous_report">
 
             <form action="report_recieved.html">
                 <div class="form-group">
-                <label for="reportCategory">Type of Crime</label>
-                <select name="category" id="reportCategory">
-                    <option value="">Select a Category</option>
-                    <option value="assault">Assault</option>
-                    <option value="theft">Theft</option>
-                    <option value="burglary">Burglary</option>
-                    <option value="robbery">Robbery</option>
-                    <option value="vandalism">Vandalism</option>
-                    <option value="drug-activity">Drug-Activity</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
+                    <label for="reportCategory">Type of Crime</label>
+                    <select name="category" id="reportCategory">
+                        <option value="">Select a Category</option>
+                        <option value="assault">Assault</option>
+                        <option value="theft">Theft</option>
+                        <option value="burglary">Burglary</option>
+                        <option value="robbery">Robbery</option>
+                        <option value="vandalism">Vandalism</option>
+                        <option value="drug-activity">Drug-Activity</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
             
-            <div class="form-group">
-                <label for="reportDate">Date of Incident</label>
-                <input type="date" id="reportDate" name="date" required>
-            </div>
+                <div class="form-group">
+                    <label for="reportDate">Date of Incident</label>
+                    <input type="date" id="reportDate" name="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reportLocation">Where did the Crime occur?</label>
+                    <input type="text" id="reportLocation" name="location" placeholder="Street Address">
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Crime Description</label>
+                    <textarea name="description" id="description" placeholder="Describe what happened.  Include as many details as possible." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit">Submit Anonymous Report</button>
+                </div>
             
-            <div class="form-group">
-                <label for="reportLocation">Where did the Crime occur?</label>
-                <input type="text" id="reportLocation" name="location" placeholder="Street Address">
-            </div>
-            
-            <div class="form-group">
-                <label for="description">Crime Description</label>
-                <textarea name="description" id="description" placeholder="Describe what happened.  Include as many details as possible." required></textarea>
-            </div>
-            
-            <div class="form-group">
-                <button type="submit">Submit Anonymous Report</button>
-            </div>
-            
-        </form>
-    <div class="report_img ">
+            </form>
+        </div>
+        <div class="report_img ">
 
-        <img src="images/protect.avif" alt="Protect yourself from human trafficking" loading="lazy">
-    </div>
+            <img src="images/protect.avif" alt="Protect yourself from human trafficking" loading="lazy">
+        </div>
 
     </main>
     <footer>
