@@ -1,4 +1,4 @@
-import { loadCrimes } from "./loadCrimes.js"
+import { loadCrimes } from "./loadcrimes.js"
 
 function formatDate(date) {
     const year = date.getFullYear(); 
