@@ -221,7 +221,7 @@ label.incidents{
     align-content: center;
     margin: var(--large); 
     margin-top: var(--large); 
-    padding: 0, var(--large);
+    padding: 0 var(--large);
 }
 
 .incidents.table{
