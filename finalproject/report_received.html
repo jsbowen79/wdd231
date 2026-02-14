@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Learn about Denver crime data sources and share community safety concerns.">
+    <meta name="description" content="Denver Crime Awareness Center - Confirmation of report receipt.">
     <meta name="author" content="Joseph Bowen">
 
-    <meta property="og:title" content="Denver Crime Awareness Center-Community Safety Feedback">
+    <meta property="og:title" content="Denver Crime Awareness Center-Thank you">
     <meta property="og:description"
-        content="Learn about Denver crime data sources and share community safety concerns.">
-    <meta property="og:url" content="https://jsbowen79.github.io/wdd231/finalproject/report.html">
+        content="Confirmation of anonymous report receipt.">
+    <meta property="og:url" content="https://jsbowen79.github.io/wdd231/finalproject/report_received.html">
     <meta property="og:image" content="https://jsbowen79.github.io/wdd231/finalproject/hero_report_1280x854.avif">
     <meta property="og:image:width" content="1280">
     <meta property="og:image:height" content="852">
@@ -26,14 +25,14 @@
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
     </noscript>
-    <link rel="canonical" href="https://jsbowen79.github.io/wdd231/finalproject/report.html">
+    <link rel="canonical" href="https://jsbowen79.github.io/wdd231/finalproject/report_received.html">
     <link rel="icon" href="https://jsbowen79.github.io/wdd231/finalproject/images/denver_crime_awareness_favicon.ico">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/desktop.css">
     <script type="module" src="scripts/navigation.js"></script>
     <script type="module" src="scripts/footer.js"></script>
-    <script type="module" src="scripts/report.js"></script>
+    <script type="module" src="scripts/received.js"></script>
     <title>Denver Crime Awareness Center-Community Safety Feedback</title>
 
 </head>
@@ -60,8 +59,8 @@
         <div class="grid">
             <div class="hero limited">
                 <img src="images/hero_report_1500x1000.avif"
-                alt="A picture a a Policeman on the far side of a police line that says 'Do Not Cross'." width="1500"
-                height="999" srcset="
+                    alt="A picture a a Policeman on the far side of a police line that says 'Do Not Cross'."
+                    width="1500" height="999" srcset="
                 images/hero_report_700x467.avif 700w,
                 images/hero_report_850x567.avif 850w,
                 images/hero_report_1280x854.avif 1280w, 
@@ -70,65 +69,8 @@
                 (max-width: 1062px) 70vw,
                 1500px" decoding="async" loading="eager" fetchpriority="high">
             </div>
-                <h2>Safety is Everyone's Responsibility</h2>
-                <p>The information on this website is provided as a service to the Denver Community.  Remaining vigilant and informed 
-                    is the best way to deter becoming a victim of crime.  The information provided has been gathered by the City and County 
-                    of Denver and the Denver Police Department.  The information is available on the Denver Open data library.  It has been 
-                    extracted and presented in a form that may be easier for some users to interact with and understand.  This 
-                    website is not intended to be your only source of information and you are encouraged to seek out other information to 
-                    help keep you safe.   
-                </p>
-                
-                <h3 class="hide">Participate in your own well being!</h3>
-                <div class="report_img limited something">
-                    <img  src="images/saysomething.avif" alt="If you see something, say something" loading="lazy">
-                </div>
-        </div>
-        <h4>Report Suspected Crimes to the Police!</h4>
-        <p class="center">In an emergency, always dial 911.  To report a crime anonymously, fill out the following form.</p>
-        <div class="anonymous_report">
-
-            <form action="report_received.html" method="get" target="_blank">
-                <div class="form-group">
-                    <label for="reportCategory">Type of Crime</label>
-                    <select name="category" id="reportCategory">
-                        <option value="">Select a Category</option>
-                        <option value="assault">Assault</option>
-                        <option value="theft">Theft</option>
-                        <option value="burglary">Burglary</option>
-                        <option value="robbery">Robbery</option>
-                        <option value="vandalism">Vandalism</option>
-                        <option value="drug-activity">Drug-Activity</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-            
-                <div class="form-group">
-                    <label for="reportDate">Date of Incident</label>
-                    <input type="date" id="reportDate" name="date" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="reportLocation">Where did the Crime occur?</label>
-                    <input type="text" id="reportLocation" name="location" placeholder="Street Address">
-                </div>
-                
-                <div class="form-group">
-                    <label for="description">Crime Description</label>
-                    <textarea name="description" id="description" placeholder="Describe what happened.  Include as many details as possible." required></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <button type="submit">Submit Anonymous Report</button>
-                </div>
-            
-            </form>
-        </div>
-        <div class="report_img ">
-
-            <img src="images/protect.avif" alt="Protect yourself from human trafficking" loading="lazy">
-        </div>
-
+            <h2>Safety is Everyone's Responsibility</h2>
+          
     </main>
     <footer>
         <h5>Denver Crime Awareness<br>Center</h5>
