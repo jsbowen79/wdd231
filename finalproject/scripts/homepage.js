@@ -1,6 +1,6 @@
 import { populateFooter } from "./footer.js"; 
 import { setupNav } from "./navigation.js";
-import { loadCrimes } from "./load.js"; 
+import { loadCrimes } from "./loadcrimes.js"; 
 
 const url =
      "https://services1.arcgis.com/zdB7qR0BtYrg0Xpl/arcgis/rest/services/ODC_CRIME_OFFENSES_P/FeatureServer/324/query?outFields=*&where=1%3D1&orderByFields=REPORTED_DATE%20DESC&resultRecordCount=25&f=geojson";

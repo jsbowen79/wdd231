@@ -14,12 +14,6 @@
     --accent-interactive: #1E6091;
     --accent-interactive-text: #FFFFFF;
 
-    --crime-violent: #8B1E1E;
-    --crime-financial: #7A5C00;
-    --crime-traffic: #1F7A63;
-    --crime-drug: #6B4E9B;
-    --crime-other: #4B5563;
-
     --font-primary: "Source Sans 3", sans-serif;
     --font-secondary: "Inter Tight", sans-serif;
 
@@ -31,7 +25,6 @@
 * {
     font-family: var(--font-primary);
     box-sizing: border-box;
-    font-family: var(--font-primary);
     font-size: 1rem;
     margin: 0;
     padding: 0;
@@ -106,7 +99,6 @@ header img {
     display: flex;
     text-align: center;
     padding: var(--standard);
-    text-decoration: none;
     background-color: var(--accent-interactive);
     color: var(--accent-interactive-text);
 }
@@ -192,9 +184,6 @@ th {
 td {
     border-bottom: 1px dotted black;
     border-right: 1px dotted black;
-}
-
-td{
     font-size: .85rem;
     padding: var(--standard);
 }
