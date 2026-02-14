@@ -1,0 +1,130 @@
+@media screen and (min-width: 600px) {
+    .grid{
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid h2{
+        grid-area: 1/1/2/3;
+    }
+
+    header img{
+        max-width: 180px;
+        font-size: 25px;
+    }
+    h1{
+        padding-left: 30px;
+        align-items: center;
+    }
+
+    .hide{
+        grid-area: 3/1/4/3;
+    }
+
+    .something{
+        width: 100%;
+        grid-area: 4/1/5/3;
+        justify-content: center;
+    }
+
+    footer{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer h5{
+        grid-area: 1/1/2/4;
+    }
+
+    header{
+        position: relative; 
+        grid-template-columns: 10% 90%;
+    }
+
+    .hamburger{
+        position: relative; 
+        bottom: -40px; 
+
+    }
+
+    .hamburger.index{
+        bottom: 0
+    }
+
+    .hamburger::before {
+        font-size: 3rem;
+    }
+
+    .hamburger.show::before {
+        font-size: 3rem;
+    }
+    #nav-bar
+    {
+        left: auto; 
+        top: auto; 
+        right: 100px; 
+        top: -30px; 
+    }
+
+    .date, .crimeType{
+        display: table-cell; 
+    }
+    .intro{
+        justify-items: center;
+    }
+
+    .index.p{
+        font-size: 1.25rem;
+        max-width: 880px;
+        text-align: center;
+    }
+
+    .index.table{
+        min-height: 1165px;
+    }
+
+    .incidents.table th,
+     .incidents.table td,
+     .incidents select,
+     label.incidents {
+        font-size: 1.15rem; 
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .grid h2{
+        grid-area: 1/1/2/4;
+    }
+
+    .hide{
+        display: none; 
+    }
+
+    .something{
+        grid-area: 2/3/3/4;
+    }
+    h1, h2, h3, h4{
+        font-size: 3rem;
+    }
+
+    h1{
+        text-align: left;
+    }
+
+    .index.p{
+        font-size: 1.75rem;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;   }
+
+    /* .incidents.table{
+        min-height: 1509px;
+    }*/
+} 

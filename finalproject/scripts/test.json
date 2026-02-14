@@ -1,263 +1,486 @@
 {
-    "objectIdFieldName": "OBJECTID",
-    "uniqueIdField": {
-        "name": "OBJECTID",
-        "isSystemMaintained": true
+    "type": "FeatureCollection",
+    "properties": {
+        "exceededTransferLimit": true
     },
-    "globalIdFieldName": "",
-    "geometryType": "esriGeometryPoint",
-    "spatialReference": {
-        "wkid": 4326,
-        "latestWkid": 4326
-    },
-    "fields": [
-        {
-            "name": "OBJECTID",
-            "type": "esriFieldTypeOID",
-            "alias": "OBJECTID",
-            "sqlType": "sqlTypeOther",
-            "domain": null,
-            "defaultValue": null
-        },
-        {
-            "name": "REPORTED_DATE",
-            "type": "esriFieldTypeDate",
-            "alias": "REPORTED_DATE",
-            "sqlType": "sqlTypeOther",
-            "length": 8,
-            "domain": null,
-            "defaultValue": null
-        },
-        {
-            "name": "INCIDENT_ADDRESS",
-            "type": "esriFieldTypeString",
-            "alias": "INCIDENT_ADDRESS",
-            "sqlType": "sqlTypeOther",
-            "length": 100,
-            "domain": null,
-            "defaultValue": null
-        },
-        {
-            "name": "GEO_LON",
-            "type": "esriFieldTypeDouble",
-            "alias": "GEO_LON",
-            "sqlType": "sqlTypeOther",
-            "domain": null,
-            "defaultValue": null
-        },
-        {
-            "name": "GEO_LAT",
-            "type": "esriFieldTypeDouble",
-            "alias": "GEO_LAT",
-            "sqlType": "sqlTypeOther",
-            "domain": null,
-            "defaultValue": null
-        },
-        {
-            "name": "NEIGHBORHOOD",
-            "type": "esriFieldTypeString",
-            "alias": "NEIGHBORHOOD",
-            "sqlType": "sqlTypeOther",
-            "length": 100,
-            "domain": null,
-            "defaultValue": null
-        },
-        {
-            "name": "REPORTER_NAME",
-            "type": "esriFieldTypeString",
-            "alias": "REPORTER_NAME",
-            "sqlType": "sqlTypeOther",
-            "length": 255,
-            "domain": null,
-            "defaultValue": null
-        },
-        {
-            "name": "REPORTER_EMAIL",
-            "type": "esriFieldTypeString",
-            "alias": "REPORTER_EMAIL",
-            "sqlType": "sqlTypeOther",
-            "length": 255,
-            "domain": null,
-            "defaultValue": null
-        },
-        {
-            "name": "REPORTER_PHONE",
-            "type": "esriFieldTypeString",
-            "alias": "REPORTER_PHONE",
-            "sqlType": "sqlTypeOther",
-            "length": 255,
-            "domain": null,
-            "defaultValue": null
-        },
-        {
-            "name": "NARRATIVE",
-            "type": "esriFieldTypeString",
-            "alias": "NARRATIVE",
-            "sqlType": "sqlTypeOther",
-            "length": 255,
-            "domain": null,
-            "defaultValue": null
-        },
-        {
-            "name": "OFFENSECATEGORY",
-            "type": "esriFieldTypeInteger",
-            "alias": "OFFENSECATEGORY",
-            "sqlType": "sqlTypeOther",
-            "domain": null,
-            "defaultValue": null
-        }
-    ],
-    "exceededTransferLimit": true,
     "features": [
         {
-            "attributes": {
-                "OBJECTID": 28734,
-                "REPORTED_DATE": 1533038400000,
-                "INCIDENT_ADDRESS": "E COLFAX AVE / N DOWNING ST",
-                "GEO_LON": -104.9730966,
-                "GEO_LAT": 39.7400317,
-                "NEIGHBORHOOD": "capitol-hill",
-                "REPORTER_NAME": null,
-                "REPORTER_EMAIL": null,
-                "REPORTER_PHONE": null,
-                "NARRATIVE": null,
-                "OFFENSECATEGORY": 1
+            "type": "Feature",
+            "id": 1,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.977445220726,
+                    39.7386454601356
+                ]
+            },
+            "properties": {
+                "OBJECTID": 1,
+                "INCIDENT_ID": "DP2025673746",
+                "OFFENSE_ID": "DP2025673746131300",
+                "OFFENSE_CODE": "1313",
+                "OFFENSE_CODE_EXTENSION": 0,
+                "OFFENSE_TYPE_ID": "assault-simple",
+                "OFFENSE_CATEGORY_ID": "other-crimes-against-persons",
+                "FIRST_OCCURRENCE_DATE": 1765960200000,
+                "LAST_OCCURRENCE_DATE": null,
+                "REPORTED_DATE": 1765965780000,
+                "INCIDENT_ADDRESS": "800 BLK E 14TH AVE",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -104.97744522,
+                "GEO_LAT": 39.73864546,
+                "DISTRICT_ID": "6",
+                "PRECINCT_ID": "623",
+                "NEIGHBORHOOD_ID": "capitol-hill",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
             }
         },
         {
-            "attributes": {
-                "OBJECTID": 28758,
-                "REPORTED_DATE": 1533038400000,
-                "INCIDENT_ADDRESS": "I70 HWYWB / N WASHINGTON ST",
-                "GEO_LON": -104.9791603,
-                "GEO_LAT": 39.7796753,
-                "NEIGHBORHOOD": "globeville",
-                "REPORTER_NAME": null,
-                "REPORTER_EMAIL": null,
-                "REPORTER_PHONE": null,
-                "NARRATIVE": null,
-                "OFFENSECATEGORY": 2
+            "type": "Feature",
+            "id": 2,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.836232620042,
+                    39.7901294833954
+                ]
+            },
+            "properties": {
+                "OBJECTID": 2,
+                "INCIDENT_ID": "DP2025673546",
+                "OFFENSE_ID": "DP2025673546299901",
+                "OFFENSE_CODE": "2999",
+                "OFFENSE_CODE_EXTENSION": 1,
+                "OFFENSE_TYPE_ID": "criminal-mischief-mtr-veh",
+                "OFFENSE_CATEGORY_ID": "public-disorder",
+                "FIRST_OCCURRENCE_DATE": 1765945080000,
+                "LAST_OCCURRENCE_DATE": null,
+                "REPORTED_DATE": 1765948920000,
+                "INCIDENT_ADDRESS": "5000 BLK N UTOPIA CT",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -104.83623262,
+                "GEO_LAT": 39.79012948,
+                "DISTRICT_ID": "5",
+                "PRECINCT_ID": "521",
+                "NEIGHBORHOOD_ID": "montbello",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
             }
         },
         {
-            "attributes": {
-                "OBJECTID": 28764,
-                "REPORTED_DATE": 1533038400000,
-                "INCIDENT_ADDRESS": " ",
-                "GEO_LON": -105.0381857,
-                "GEO_LAT": 39.6589125,
-                "NEIGHBORHOOD": "harvey-park-south",
-                "REPORTER_NAME": null,
-                "REPORTER_EMAIL": null,
-                "REPORTER_PHONE": null,
-                "NARRATIVE": null,
-                "OFFENSECATEGORY": 10
+            "type": "Feature",
+            "id": 3,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.89505824791,
+                    39.6376561587797
+                ]
+            },
+            "properties": {
+                "OBJECTID": 3,
+                "INCIDENT_ID": "DP20266001695",
+                "OFFENSE_ID": "DP20266001695620500",
+                "OFFENSE_CODE": "6205",
+                "OFFENSE_CODE_EXTENSION": 0,
+                "OFFENSE_TYPE_ID": "illegal-dumping",
+                "OFFENSE_CATEGORY_ID": "all-other-crimes",
+                "FIRST_OCCURRENCE_DATE": 1759316700000,
+                "LAST_OCCURRENCE_DATE": 1770289500000,
+                "REPORTED_DATE": 1770289980000,
+                "INCIDENT_ADDRESS": "4351 S TAMARAC ST",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -104.89505825,
+                "GEO_LAT": 39.63765616,
+                "DISTRICT_ID": "3",
+                "PRECINCT_ID": "324",
+                "NEIGHBORHOOD_ID": "hampden-south",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
             }
         },
         {
-            "attributes": {
-                "OBJECTID": 28770,
-                "REPORTED_DATE": 1533038400000,
-                "INCIDENT_ADDRESS": "1515 DELGANY ST",
-                "GEO_LON": -105.0038119,
-                "GEO_LAT": 39.7527577,
-                "NEIGHBORHOOD": "union-station",
-                "REPORTER_NAME": null,
-                "REPORTER_EMAIL": null,
-                "REPORTER_PHONE": null,
-                "NARRATIVE": null,
-                "OFFENSECATEGORY": 6
+            "type": "Feature",
+            "id": 4,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.977445220726,
+                    39.7386454601356
+                ]
+            },
+            "properties": {
+                "OBJECTID": 4,
+                "INCIDENT_ID": "DP2025673746",
+                "OFFENSE_ID": "DP2025673746501601",
+                "OFFENSE_CODE": "5016",
+                "OFFENSE_CODE_EXTENSION": 1,
+                "OFFENSE_TYPE_ID": "violation-of-court-order",
+                "OFFENSE_CATEGORY_ID": "all-other-crimes",
+                "FIRST_OCCURRENCE_DATE": 1765960200000,
+                "LAST_OCCURRENCE_DATE": null,
+                "REPORTED_DATE": 1765965780000,
+                "INCIDENT_ADDRESS": "800 BLK E 14TH AVE",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -104.97744522,
+                "GEO_LAT": 39.73864546,
+                "DISTRICT_ID": "6",
+                "PRECINCT_ID": "623",
+                "NEIGHBORHOOD_ID": "capitol-hill",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
             }
         },
         {
-            "attributes": {
-                "OBJECTID": 28778,
-                "REPORTED_DATE": 1533038400000,
-                "INCIDENT_ADDRESS": "3935 N QUEBEC ST",
-                "GEO_LON": -104.9037886,
-                "GEO_LAT": 39.7716366,
-                "NEIGHBORHOOD": "northeast-park-hill",
-                "REPORTER_NAME": null,
-                "REPORTER_EMAIL": null,
-                "REPORTER_PHONE": null,
-                "NARRATIVE": null,
-                "OFFENSECATEGORY": 9
+            "type": "Feature",
+            "id": 5,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.893620372791,
+                    39.653673509105
+                ]
+            },
+            "properties": {
+                "OBJECTID": 5,
+                "INCIDENT_ID": "DP2025673827",
+                "OFFENSE_ID": "DP2025673827240400",
+                "OFFENSE_CODE": "2404",
+                "OFFENSE_CODE_EXTENSION": 0,
+                "OFFENSE_TYPE_ID": "theft-of-motor-vehicle",
+                "OFFENSE_CATEGORY_ID": "auto-theft",
+                "FIRST_OCCURRENCE_DATE": 1765825200000,
+                "LAST_OCCURRENCE_DATE": 1765886400000,
+                "REPORTED_DATE": 1765961880000,
+                "INCIDENT_ADDRESS": "8405 E HAMPDEN AVE",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -104.89362037,
+                "GEO_LAT": 39.65367351,
+                "DISTRICT_ID": "3",
+                "PRECINCT_ID": "323",
+                "NEIGHBORHOOD_ID": "hampden",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
             }
         },
         {
-            "attributes": {
-                "OBJECTID": 29277,
-                "REPORTED_DATE": 1533038400000,
-                "INCIDENT_ADDRESS": "E HAMPDEN AVE / S DAYTON ST",
-                "GEO_LON": -104.8756583,
-                "GEO_LAT": 39.6530496,
-                "NEIGHBORHOOD": "kennedy",
-                "REPORTER_NAME": null,
-                "REPORTER_EMAIL": null,
-                "REPORTER_PHONE": null,
-                "NARRATIVE": null,
-                "OFFENSECATEGORY": 2
+            "type": "Feature",
+            "id": 6,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -105.004110218933,
+                    39.7568438596413
+                ]
+            },
+            "properties": {
+                "OBJECTID": 6,
+                "INCIDENT_ID": "DP2025675137",
+                "OFFENSE_ID": "DP2025675137240400",
+                "OFFENSE_CODE": "2404",
+                "OFFENSE_CODE_EXTENSION": 0,
+                "OFFENSE_TYPE_ID": "theft-of-motor-vehicle",
+                "OFFENSE_CATEGORY_ID": "auto-theft",
+                "FIRST_OCCURRENCE_DATE": 1765324800000,
+                "LAST_OCCURRENCE_DATE": 1766005200000,
+                "REPORTED_DATE": 1766011500000,
+                "INCIDENT_ADDRESS": "1750 LITTLE RAVEN ST",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -105.00411022,
+                "GEO_LAT": 39.75684386,
+                "DISTRICT_ID": "6",
+                "PRECINCT_ID": "612",
+                "NEIGHBORHOOD_ID": "union-station",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
             }
         },
         {
-            "attributes": {
-                "OBJECTID": 29293,
-                "REPORTED_DATE": 1533038400000,
-                "INCIDENT_ADDRESS": "S SANTA FE DR / W BYERS PL",
-                "GEO_LON": -104.9976395,
-                "GEO_LAT": 39.7122799,
-                "NEIGHBORHOOD": "baker",
-                "REPORTER_NAME": null,
-                "REPORTER_EMAIL": null,
-                "REPORTER_PHONE": null,
-                "NARRATIVE": null,
-                "OFFENSECATEGORY": 2
+            "type": "Feature",
+            "id": 7,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -105.025848533731,
+                    39.7064863674748
+                ]
+            },
+            "properties": {
+                "OBJECTID": 7,
+                "INCIDENT_ID": "DP20256272510",
+                "OFFENSE_ID": "DP20256272510200600",
+                "OFFENSE_CODE": "2006",
+                "OFFENSE_CODE_EXTENSION": 0,
+                "OFFENSE_TYPE_ID": "arson-residence",
+                "OFFENSE_CATEGORY_ID": "arson",
+                "FIRST_OCCURRENCE_DATE": 1763679960000,
+                "LAST_OCCURRENCE_DATE": null,
+                "REPORTED_DATE": 1763691540000,
+                "INCIDENT_ADDRESS": "3000 BLK W CUSTER PL",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -105.02584853,
+                "GEO_LAT": 39.70648637,
+                "DISTRICT_ID": "4",
+                "PRECINCT_ID": "412",
+                "NEIGHBORHOOD_ID": "westwood",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
             }
         },
         {
-            "attributes": {
-                "OBJECTID": 29294,
-                "REPORTED_DATE": 1533038400000,
-                "INCIDENT_ADDRESS": "900 BLOCK E 14TH AVE",
-                "GEO_LON": -104.9761744,
-                "GEO_LAT": 39.7383516,
-                "NEIGHBORHOOD": "capitol-hill",
-                "REPORTER_NAME": null,
-                "REPORTER_EMAIL": null,
-                "REPORTER_PHONE": null,
-                "NARRATIVE": null,
-                "OFFENSECATEGORY": 2
+            "type": "Feature",
+            "id": 8,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.876708714391,
+                    39.6539446781274
+                ]
+            },
+            "properties": {
+                "OBJECTID": 8,
+                "INCIDENT_ID": "DP20256019076",
+                "OFFENSE_ID": "DP20256019076230500",
+                "OFFENSE_CODE": "2305",
+                "OFFENSE_CODE_EXTENSION": 0,
+                "OFFENSE_TYPE_ID": "theft-items-from-vehicle",
+                "OFFENSE_CATEGORY_ID": "theft-from-motor-vehicle",
+                "FIRST_OCCURRENCE_DATE": 1765652400000,
+                "LAST_OCCURRENCE_DATE": 1765654200000,
+                "REPORTED_DATE": 1765905300000,
+                "INCIDENT_ADDRESS": "9600 E GIRARD AVE",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -104.87670871,
+                "GEO_LAT": 39.65394468,
+                "DISTRICT_ID": "3",
+                "PRECINCT_ID": "323",
+                "NEIGHBORHOOD_ID": "hampden",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
             }
         },
         {
-            "attributes": {
-                "OBJECTID": 29341,
-                "REPORTED_DATE": 1533038400000,
-                "INCIDENT_ADDRESS": " ",
-                "GEO_LON": -104.9916676,
-                "GEO_LAT": 39.7412718,
-                "NEIGHBORHOOD": "cbd",
-                "REPORTER_NAME": null,
-                "REPORTER_EMAIL": null,
-                "REPORTER_PHONE": null,
-                "NARRATIVE": null,
-                "OFFENSECATEGORY": 2
+            "type": "Feature",
+            "id": 9,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.996282749285,
+                    39.7378793190722
+                ]
+            },
+            "properties": {
+                "OBJECTID": 9,
+                "INCIDENT_ID": "DP20256019107",
+                "OFFENSE_ID": "DP20256019107229900",
+                "OFFENSE_CODE": "2299",
+                "OFFENSE_CODE_EXTENSION": 0,
+                "OFFENSE_TYPE_ID": "burglary-other",
+                "OFFENSE_CATEGORY_ID": "burglary",
+                "FIRST_OCCURRENCE_DATE": 1763380800000,
+                "LAST_OCCURRENCE_DATE": 1765976400000,
+                "REPORTED_DATE": 1765980300000,
+                "INCIDENT_ADDRESS": "1350 N SPEER BLVD",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -104.99628275,
+                "GEO_LAT": 39.73787932,
+                "DISTRICT_ID": "6",
+                "PRECINCT_ID": "611",
+                "NEIGHBORHOOD_ID": "civic-center",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
             }
         },
         {
-            "attributes": {
-                "OBJECTID": 29782,
-                "REPORTED_DATE": 1533038400000,
-                "INCIDENT_ADDRESS": "W HOLDEN PL / N DECATUR ST",
-                "GEO_LON": -105.0217649,
-                "GEO_LAT": 39.7356604,
-                "NEIGHBORHOOD": "sun-valley",
-                "REPORTER_NAME": null,
-                "REPORTER_EMAIL": null,
-                "REPORTER_PHONE": null,
-                "NARRATIVE": null,
-                "OFFENSECATEGORY": 2
+            "type": "Feature",
+            "id": 10,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.928489394676,
+                    39.6685962943397
+                ]
+            },
+            "properties": {
+                "OBJECTID": 10,
+                "INCIDENT_ID": "DP20256019092",
+                "OFFENSE_ID": "DP20256019092239900",
+                "OFFENSE_CODE": "2399",
+                "OFFENSE_CODE_EXTENSION": 0,
+                "OFFENSE_TYPE_ID": "theft-other",
+                "OFFENSE_CATEGORY_ID": "larceny",
+                "FIRST_OCCURRENCE_DATE": 1765880040000,
+                "LAST_OCCURRENCE_DATE": 1765880400000,
+                "REPORTED_DATE": 1765972680000,
+                "INCIDENT_ADDRESS": "5100 BLK E YALE CIR",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -104.92848939,
+                "GEO_LAT": 39.66859629,
+                "DISTRICT_ID": "3",
+                "PRECINCT_ID": "314",
+                "NEIGHBORHOOD_ID": "university-hills",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
             }
         },
         {
-            "attributes":
+            "type": "Feature",
+            "id": 11,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.770563914609,
+                    39.8156863475099
+                ]
+            },
+            "properties": {
+                "OBJECTID": 11,
+                "INCIDENT_ID": "DP2025673830",
+                "OFFENSE_ID": "DP2025673830230500",
+                "OFFENSE_CODE": "2305",
+                "OFFENSE_CODE_EXTENSION": 0,
+                "OFFENSE_TYPE_ID": "theft-items-from-vehicle",
+                "OFFENSE_CATEGORY_ID": "theft-from-motor-vehicle",
+                "FIRST_OCCURRENCE_DATE": 1765929600000,
+                "LAST_OCCURRENCE_DATE": 1765958400000,
+                "REPORTED_DATE": 1765961040000,
+                "INCIDENT_ADDRESS": "18600 E 66TH AVE",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -104.77056391,
+                "GEO_LAT": 39.81568635,
+                "DISTRICT_ID": "5",
+                "PRECINCT_ID": "522",
+                "NEIGHBORHOOD_ID": "dia",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 12,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.986198918451,
+                    39.7305195664632
+                ]
+            },
+            "properties": {
+                "OBJECTID": 12,
+                "INCIDENT_ID": "DP20256019061",
+                "OFFENSE_ID": "DP20256019061230500",
+                "OFFENSE_CODE": "2305",
+                "OFFENSE_CODE_EXTENSION": 0,
+                "OFFENSE_TYPE_ID": "theft-items-from-vehicle",
+                "OFFENSE_CATEGORY_ID": "theft-from-motor-vehicle",
+                "FIRST_OCCURRENCE_DATE": 1765896180000,
+                "LAST_OCCURRENCE_DATE": 1765897200000,
+                "REPORTED_DATE": 1765918560000,
+                "INCIDENT_ADDRESS": "99 E 9TH AVE",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -104.98619892,
+                "GEO_LAT": 39.73051957,
+                "DISTRICT_ID": "6",
+                "PRECINCT_ID": "623",
+                "NEIGHBORHOOD_ID": "capitol-hill",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 13,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -105.049127315657,
+                    39.654738109193
+                ]
+            },
+            "properties": {
+                "OBJECTID": 13,
+                "INCIDENT_ID": "DP20256019100",
+                "OFFENSE_ID": "DP20256019100299901",
+                "OFFENSE_CODE": "2999",
+                "OFFENSE_CODE_EXTENSION": 1,
+                "OFFENSE_TYPE_ID": "criminal-mischief-mtr-veh",
+                "OFFENSE_CATEGORY_ID": "public-disorder",
+                "FIRST_OCCURRENCE_DATE": 1765900800000,
+                "LAST_OCCURRENCE_DATE": 1765919100000,
+                "REPORTED_DATE": 1765963560000,
+                "INCIDENT_ADDRESS": "3130 S SHERIDAN BLVD",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -105.04912732,
+                "GEO_LAT": 39.65473811,
+                "DISTRICT_ID": "4",
+                "PRECINCT_ID": "423",
+                "NEIGHBORHOOD_ID": "harvey-park-south",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 14,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.992316107957,
+                    39.7371539920122
+                ]
+            },
+            "properties": {
+                "OBJECTID": 14,
+                "INCIDENT_ID": "DP20255004067",
+                "OFFENSE_ID": "DP20255004067361200",
+                "OFFENSE_CODE": "3612",
+                "OFFENSE_CODE_EXTENSION": 0,
+                "OFFENSE_TYPE_ID": "sex-off-fail-to-register",
+                "OFFENSE_CATEGORY_ID": "all-other-crimes",
+                "FIRST_OCCURRENCE_DATE": 1765468800000,
+                "LAST_OCCURRENCE_DATE": 1765974900000,
+                "REPORTED_DATE": 1765975140000,
+                "INCIDENT_ADDRESS": "1331 N CHEROKEE ST",
+                "GEO_X": 0,
+                "GEO_Y": 0,
+                "GEO_LON": -104.99231611,
+                "GEO_LAT": 39.73715399,
+                "DISTRICT_ID": "6",
+                "PRECINCT_ID": "611",
+                "NEIGHBORHOOD_ID": "civic-center",
+                "IS_CRIME": 1,
+                "IS_TRAFFIC": 0,
+                "VICTIM_COUNT": 1
+            }
+        }
+    ]
+
+    }
+    

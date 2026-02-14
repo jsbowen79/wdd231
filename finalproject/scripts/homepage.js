@@ -1,78 +1,53 @@
 import { populateFooter } from "./footer.js"; 
-import { fetchCrimeData } from "./fetch_crimes.js";
 import { setupNav } from "./navigation.js";
+import { loadCrimes } from "./loadCrimes.js"; 
+
+const url =
+     "https://services1.arcgis.com/zdB7qR0BtYrg0Xpl/arcgis/rest/services/ODC_CRIME_OFFENSES_P/FeatureServer/324/query?outFields=*&where=1%3D1&orderByFields=REPORTED_DATE%20DESC&resultRecordCount=25&f=geojson";
+
+
+export function populateModal(item) {
+    const dialogEL = document.querySelector('#detailsModal'); 
+    const incidentIDEL = document.createElement('h4');
+    const addressEL = document.createElement('p'); 
+    const categoryEL = document.createElement('p'); 
+    const neighborhoodEL = document.createElement('p'); 
+    const dateEL = document.createElement('p'); 
+    const typeEL = document.createElement('p'); 
+    const victimCount = document.createElement('p'); 
+    const reportDate = new Date(item.properties.REPORTED_DATE).toLocaleDateString();
+    const offenseDate = new Date(item.properties.FIRST_OCCURRENCE_DATE).toLocaleDateString();
+    const modalClose = document.createElement('btn'); 
+    modalClose.setAttribute("id", "closeModal"); 
+    modalClose.textContent = "Close"; 
+    
+    incidentIDEL.textContent =`Incident Number${item.properties.INCIDENT_ID}`; 
+    addressEL.textContent = `Incident Address: ${item.properties.INCIDENT_ADDRESS}`; 
+    victimCount.textContent = `This incident involved ${item.properties.VICTIM_COUNT} victims.`;
+    categoryEL.textContent = `The category of this crime is ${item.properties.OFFENSE_CATEGORY_ID}.`; 
+    neighborhoodEL.textContent = `This address is in the ${item.properties.NEIGHBORHOOD_ID.toUpperCase()} neighborhood.`; 
+    dateEL.textContent = `This crime occurred on ${offenseDate} and was reported on ${reportDate}.`;
+    typeEL.textContent = `This crime was of type: ${item.properties.OFFENSE_TYPE_ID}.`;
+    
+    dialogEL.appendChild(incidentIDEL); 
+    dialogEL.appendChild(dateEL); 
+    dialogEL.appendChild(addressEL); 
+    dialogEL.appendChild(neighborhoodEL); 
+    
+    dialogEL.appendChild(categoryEL); 
+    dialogEL.appendChild(typeEL); 
+    dialogEL.appendChild(victimCount); 
+    dialogEL.appendChild(modalClose); 
+}    
+
 
 document.addEventListener("DOMContentLoaded", () =>
-{
-    setupNav(); 
-
-    let crimeConfig; 
-
-    fetch('./data/offense_categories.json').then(response => response.json())
-        .then(data => {
-            crimeConfig = data;
-        }); 
-    
-    
-    async function loadCrimes()
     {
-        debugger; 
-    
-        const tbodyEL = document.querySelector(".crimes"); 
-        const crimes = await fetchCrimeData(15);
+        setupNav(); 
         
-        if (!Array.isArray(crimes)) {
-            console.error("Crimes is not an array: ", crimes); 
-            return; 
-        }
-        console.log("crimes:", crimes, Array.isArray(crimes));
-
-        
-        crimes.forEach(item =>
-        {
-            
-
-                const rowEL = document.createElement("tr"); 
-                const tdDateEL = document.createElement("td"); 
-                const tdTypeEL = document.createElement("td"); 
-                const tdCategoryEL = document.createElement("td"); 
-                const tdNeighborhoodEL = document.createElement("td"); 
-                const tdButtonEL = document.createElement("td");
-                const date = new Date(item.attributes.REPORTED_DATE).toLocaleDateString(); 
-                const buttonEL = document.createElement("button");
-                buttonEL.textContent = "See Details"; 
-                
-                
-                const offenseInfo = crimeConfig.offenseLookup[item.attributes.OFFENSECATEGORY].group; 
-                
-                tdDateEL.textContent = date; 
-                tdTypeEL.textContent = offenseInfo; 
-                tdCategoryEL.textContent = item.attributes.OFFENSECATEGORY; 
-                tdNeighborhoodEL.textContent = item.attributes.NEIGHBORHOOD.toUpperCase(); 
-                
-                buttonEL.setAttribute("class", "details_btn"); 
-                tdButtonEL.appendChild(buttonEL); 
-                
-                rowEL.appendChild(tdDateEL); 
-                rowEL.appendChild(tdTypeEL); 
-                rowEL.appendChild(tdCategoryEL); 
-                rowEL.appendChild(tdNeighborhoodEL); 
-                rowEL.appendChild(tdButtonEL); 
-                tbodyEL.appendChild(rowEL); 1
-            
-        })
-    }
-
-    
+        loadCrimes(url); 
 
 
-
-
-
-
-    loadCrimes(); 
-
-
-    populateFooter(); 
+        populateFooter(); 
 
 })

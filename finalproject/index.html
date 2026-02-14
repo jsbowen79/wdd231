@@ -34,6 +34,8 @@
     <script type="module" src="scripts/navigation.js"></script>
     <script type="module" src="scripts/footer.js"></script>
     <script type="module" src="scripts/fetch_crimes.js"></script>
+    <script type="module" src="scripts/loadCrimes.js"></script>
+    
     <script type="module" src="scripts/homepage.js"></script>
     <title>Denver Crime Awareness Center Homepage</title>
 
@@ -43,7 +45,7 @@
     <header>
         <img src="images/crime_awareness_logo.avif" alt="Denver Crime Awareness Center Logo">
         <h1>Denver Crime Awareness Center</h1>
-        <button aria-label="Navigation" id="ham-btn" class="hamburger"></button>
+        <button aria-label="Navigation" id="ham-btn" class="hamburger index"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li class="home current"><a href="https://jsbowen79.github.io/wdd231/finalproject/index.html"><span
@@ -72,24 +74,25 @@
         <div class="intro">
 
             <h2>Denver Communities Fighting Crime through Crime Awareness</h2>
-            <p>
+            <p class="index p">
                 There were an average of 19.6 violent crimes per day in Denver in 2024.  During the same time period, Denver experienced an average 
                 of 94.2 property crimes per day.<sup>1</sup>  This works out to over 110 crime victims for each day of the year. 
             </p>
                 
                 <h3>"Crime Prevention Cannot work without you.  The importance of crime prevention comes from the involvement of the community working together
-                    with law enforcement..."--Richard Arrington<sup>2</sup>.
+                    with law enforcement..."<br>--Richard Arrington<sup>2</sup>
                 </h3>
-                <p>The Denver Crime Awareness Center is committed do reducing crime through education and community involvement.  We strive to 
-                    provide you with the most up to date data on crime available in Denver.  Help us decrease your chances of becoming one of 
+                <p class="index p">The Denver Crime Awareness Center is committed do reducing crime through education and community involvement.  We strive to 
+                    provide you Denver's most up to date crime data to decrease your chances of becoming one of 
                     those 110 daily crime victims.
                 </p>
         </div>
         <div class="recentCrimes">
-            <table>
+            <table class="index table">
+                <h4>Recent Denver Crimes</h4>
                 <thead>
-                    <th>Date</th>
-                    <th>Offense Type</th>
+                    <th class="date">Date</th>
+                    <th class="crimeType">Offense Type</th>
                     <th>Category</th>
                     <th>Neighborhood</th>
                     <th>Details</th>
@@ -97,9 +100,11 @@
                 <tbody class="crimes">
 
                 </tbody>
-
             </table>
         </div>
+        <dialog id="detailsModal">
+            <button id="closeModal">Close</button>
+        </dialog>
                         
                         
                         

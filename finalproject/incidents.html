@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Welcome to the Denver Crime Awareness Center where you can learn about the safety of your community and report safety issues to the authorities!">
+        content="Filter and explore public Denver crime data by offense type and location.">
     <meta name="author" content="Joseph Bowen">
 
-    <meta property="og:title" content="Denver Crime Awareness Center Home">
+    <meta property="og:title" content="Denver Crime Awareness Center-Explore Denver Crime by Category and Neighborhood.">
     <meta property="og:description"
-        content="Welcome to the Denver Crime Awareness Center where you can learn about the safety of your community and report safety issues to the authorities!">
-    <meta property="og:url" content="https://jsbowen79.github.io/wdd231/finalproject/index.html">
-    <meta property="og:image" content="https://jsbowen79.github.io/wdd231/finalproject/hero_1280x852.avif">
+        content="Filter and explore public Denver crime data by offense type and location">
+    <meta property="og:url" content="https://jsbowen79.github.io/wdd231/finalproject/incidents.html">
+    <meta property="og:image" content="https://jsbowen79.github.io/wdd231/finalproject/hero_statistics_1280x700.avif">
     <meta property="og:image:width" content="1280">
-    <meta property="og:image:height" content="852">
+    <meta property="og:image:height" content="700">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,9 +31,12 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/desktop.css">
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/footer.js" defer></script>
-    <title>Denver Crime Awareness Center Homepage</title>
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/footer.js"></script>
+    <script type="module" src="scripts/fetch_crimes.js"></script> 
+    <script type="module" src="scripts/tailor_query.js"></script>
+    <script type="module" src="scripts/loadCrimes.js"></script> 
+    <title>Denver Crime Awareness Center-Explore Denver Crime by Category and Neighborhood.</title>
 
 </head>
 
@@ -57,20 +60,153 @@
     </header>
     <main>
         <div class="hero">
-            <img src="images/hero_1500x999.avif"
-                alt="A picture a a Policeman on the far side of a police line that says 'Do Not Cross'." width="1500"
-                height="999" srcset="
-                images/hero_400x300.avif 400w,
-                images/hero_700x466.avif 700w,
-                images/hero_850x566.avif 850w,
-                images/hero_1280x852.avif 1280w, 
-                images/hero_1500x999.avif 1500w" sizes="
+            <figure>
+                <img src="images/hero_statistics_1500x879.avif"
+                alt="A graph showing the violent crimes in Denver from 2019 to August 2024." width="1500"
+                height="879" srcset="
+                images/hero_statistics_400x233.avif 400w,
+                images/hero_statistics_700x408.avif 700w,
+                images/hero_statistics_850x496.avif 850w,
+                images/hero_statistics_1200x700.avif 1280w, 
+                images/hero_statistics_1500x879.avif 1500w" sizes="
                 (max-width: 600px) 80vw, 
                 (max-width: 1062px) 70vw,
                 1500px" decoding="async" loading="eager" fetchpriority="high">
+                <figcaption>2024 figures through August.  Courtesy of Axios Denver<sup>3</sup></figcaption>
+            </figure>
         </div>
+        <h2>Explore Crime in Denver</h2>
+        <div class="flex">
+            
+            <label class="incidents" for="category"><h3>Choose a Crime Category</h3></label>
+            <select class="incidents"  name="category" id="category">
+                <option class="incidents" value="all-categories" selected>All Categories</option>
+                <option class="incidents" value="aggravated-assault">Aggravated Assault</option>
+                <option class="incidents" value="all-other-crimes">All Other Crimes</option>
+                <option class="incidents" value="arson">Arson</option>
+                <option class="incidents" value="auto-theft">Auto Theft</option>
+                <option class="incidents" value="burglary">Burglary</option>
+                <option class="incidents" value="drug-alcohol">Drug / Alcohol</option>
+                <option class="incidents" value="larceny">Larceny</option>
+                <option class="incidents" value="murder">Murder</option>
+                <option class="incidents" value="other-crimes-against-persons">Other Crimes Against Persons</option>
+                <option class="incidents" value="public-disorder">Public Disorder</option>
+                <option class="incidents" value="robbery">Robbery</option>
+                <option class="incidents" value="theft-from-motor-vehicle">Theft From Motor Vehicle</option>
+                <option class="incidents" value="white-collar-crime">White Collar Crime</option>
+            </select>
+            
+            <label class="incidents" for="dateRange"><h4>Choose a Date Range</h4></label>
+            <select class="incidents"  id="dateRange">
+                <option class="incidents" value="7" selected>Last 7 Days</option>
+                <option class="incidents" value="30">Last 30 Days</option>
+                <option class="incidents" value="90">Last 90 Days</option>
+                <option class="incidents" value="365">Last Year</option>
+            </select>
+            
+            <label class="incidents" for="neighborhood"><h4>Choose a Neighborhood</h4></label>
+            <select class="incidents"  id="neighborhood" name="neighborhood">
+                <option class="incidents" value="">All Neighborhoods</option>
+                
+                <option class="incidents" value="athmar-park">Athmar Park</option>
+                <option class="incidents" value="auraria">Auraria</option>
+                <option class="incidents" value="baker">Baker</option>
+                <option class="incidents" value="barnum">Barnum</option>
+                <option class="incidents" value="barnum-west">Barnum West</option>
+                <option class="incidents" value="bear-valley">Bear Valley</option>
+                <option class="incidents" value="belcaro">Belcaro</option>
+                <option class="incidents" value="berkeley">Berkeley</option>
+                <option class="incidents" value="capitol-hill">Capitol Hill</option>
+                <option class="incidents" value="cbd">CBD</option>
+                <option class="incidents" value="central-park">Central Park</option>
+                <option class="incidents" value="chaffee-park">Chaffee Park</option>
+                <option class="incidents" value="cheesman-park">Cheesman Park</option>
+                <option class="incidents" value="cherry-creek">Cherry Creek</option>
+                <option class="incidents" value="city-park">City Park</option>
+                <option class="incidents" value="city-park-west">City Park West</option>
+                <option class="incidents" value="civic-center">Civic Center</option>
+                <option class="incidents" value="clayton">Clayton</option>
+                <option class="incidents" value="cole">Cole</option>
+                <option class="incidents" value="college-view-south-platte">College View South Platte</option>
+                <option class="incidents" value="congress-park">Congress Park</option>
+                <option class="incidents" value="cory-merrill">Cory Merrill</option>
+                <option class="incidents" value="country-club">Country Club</option>
+                <option class="incidents" value="dia">DIA</option>
+                <option class="incidents" value="east-colfax">East Colfax</option>
+                <option class="incidents" value="elyria-swansea">Elyria Swansea</option>
+                <option class="incidents" value="five-points">Five Points</option>
+                <option class="incidents" value="fort-logan">Fort Logan</option>
+                <option class="incidents" value="gateway-green-valley-ranch">Gateway Green Valley Ranch</option>
+                <option class="incidents" value="globeville">Globeville</option>
+                <option class="incidents" value="goldsmith">Goldsmith</option>
+                <option class="incidents" value="hale">Hale</option>
+                <option class="incidents" value="hampden">Hampden</option>
+                <option class="incidents" value="hampden-south">Hampden South</option>
+                <option class="incidents" value="harvey-park">Harvey Park</option>
+                <option class="incidents" value="harvey-park-south">Harvey Park South</option>
+                <option class="incidents" value="highland">Highland</option>
+                <option class="incidents" value="hilltop">Hilltop</option>
+                <option class="incidents" value="indian-creek">Indian Creek</option>
+                <option class="incidents" value="jefferson-park">Jefferson Park</option>
+                <option class="incidents" value="kennedy">Kennedy</option>
+                <option class="incidents" value="lincoln-park">Lincoln Park</option>
+                <option class="incidents" value="lowry-field">Lowry Field</option>
+                <option class="incidents" value="mar-lee">Mar Lee</option>
+                <option class="incidents" value="marston">Marston</option>
+                <option class="incidents" value="montbello">Montbello</option>
+                <option class="incidents" value="montclair">Montclair</option>
+                <option class="incidents" value="north-capitol-hill">North Capitol Hill</option>
+                <option class="incidents" value="north-park-hill">North Park Hill</option>
+                <option class="incidents" value="northeast-park-hill">Northeast Park Hill</option>
+                <option class="incidents" value="overland">Overland</option>
+                <option class="incidents" value="platt-park">Platt Park</option>
+                <option class="incidents" value="regis">Regis</option>
+                <option class="incidents" value="rosedale">Rosedale</option>
+                <option class="incidents" value="ruby-hill">Ruby Hill</option>
+                <option class="incidents" value="skyland">Skyland</option>
+                <option class="incidents" value="sloan-lake">Sloan Lake</option>
+                <option class="incidents" value="south-park-hill">South Park Hill</option>
+                <option class="incidents" value="southmoor-park">Southmoor Park</option>
+                <option class="incidents" value="speer">Speer</option>
+                <option class="incidents" value="sun-valley">Sun Valley</option>
+                <option class="incidents" value="sunnyside">Sunnyside</option>
+                <option class="incidents" value="union-station">Union Station</option>
+                <option class="incidents" value="university">University</option>
+                <option class="incidents" value="university-hills">University Hills</option>
+                <option class="incidents" value="university-park">University Park</option>
+                <option class="incidents" value="valverde">Valverde</option>
+                <option class="incidents" value="villa-park">Villa Park</option>
+                <option class="incidents" value="virginia-village">Virginia Village</option>
+                <option class="incidents" value="washington-park">Washington Park</option>
+                <option class="incidents" value="washington-park-west">Washington Park West</option>
+                <option class="incidents" value="washington-virginia-vale">Washington Virginia Vale</option>
+                <option class="incidents" value="wellshire">Wellshire</option>
+                <option class="incidents" value="west-colfax">West Colfax</option>
+                <option class="incidents" value="west-highland">West Highland</option>
+                <option class="incidents" value="westwood">Westwood</option>
+                <option class="incidents" value="whittier">Whittier</option>
+                <option class="incidents" value="windsor">Windsor</option>
+            </select>
+        </div>
+        
+        <table class="incidents table">
+            <thead>
+                <tr>
+                    <th class="date">Date</th>
+                    <th class="crimeType">Offense Type</th>
+                    <th>Category</th>
+                    <th>Neighborhood</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody class="crimes">
+                
+            </tbody>
+        </table>
 
-
+        <dialog id="detailsModal">
+        <button id="closeModal">Close</button>
+        </dialog>
 
     </main>
     <footer>
