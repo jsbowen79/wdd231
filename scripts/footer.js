@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
 
-    lastEL.textContent = 'Last Modified: ' + raw;
+    // lastEL.textContent = 'Last Modified: ' + raw;
 
 
     
